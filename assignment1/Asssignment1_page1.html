@@ -1,0 +1,1248 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+	<title>Asssignment1_page1</title>
+	<meta=charset="utf - 8">
+</head>
+
+<body>
+	<!--use div as a whole container first page-->
+	<div style="width: 1200px; height: 1000px; margin: 20px;">
+		<!---first row,u sing several div to seperate the row---->
+		<div style="width: 1200px; height: 50px;">
+			<!---1st cell--->
+			<div style="border-bottom: 3px solid; border-right: 1px solid; float: left; width: 170px; height: 50px; font-size: 30px; text-align: center;">
+				From<b> 1040</b>
+			</div>
+			<!---2ed cell--->
+			<div style="border-bottom: 3px solid; border-right: 1px solid; float: left; width: 410px; height: 50px;  text-align: left;  background-color: lightcyan;">
+				<font style="font-size: 15px">Department of the Treasury-Internal Revenue
+					Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(99)</font>
+				<br>
+				<font style="font-size: 25px"><b>U.S. Individual Income Tax Return</b></font>
+			</div>
+			<!---3rd cell--->
+			<div style="border-bottom: 3px solid; border-right: 1px solid; border-left: 1px; float: left; width: 110px; height: 50px;  text-align: left;  background-color: lightcyan; font-size: 40px; text-align: center">
+				<b>2018</b>
+			</div>
+			<!---4th cell--->
+			<div style="border-bottom: 3px solid; border-right: 1px solid; float: left; width: 160px;height: 25px;  padding-top: 25px; text-align: center;  background-color: lightcyan; ">
+				OMB No. 1545-0074
+			</div>
+			<!---5th cell--->
+			<div style="border-bottom: 3px solid; float: left; width: 345px; height: 25px;  padding-top: 25px;  text-align: left;  background-color: lightcyan;">
+				IRS Use Only-Do not write or staple in this space.
+			</div>
+		</div>
+
+		<!---2nd row--->
+		<div style="background-color: lightcyan; height: 20px; width: 1200px;float: left;">
+			<b>Filling status:</b>
+			<input type="radio" name="test" style=" background-color: #D8D8D8; border: none;"> Single &nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="test" style=" background-color: #D8D8D8; border: none;"> Married filing
+			jointly&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="test" style=" background-color: #D8D8D8; border: none;"> Married filing
+			separately&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="test" style=" background-color: #D8D8D8;border: none;"> Head of household
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="test" style=" background-color: #D8D8D8;border: none;"> Qualifying widow(er)
+		</div>
+
+		<!---3rd row--->
+		<div style="background-color: white; height: 20px; width: 1200px; float: left; border-top: 1px solid ">
+			<!---1st cell--->
+			<div style="width: 450px; float: left; border-right: 1px solid;  height: 20px;">
+				Your first name and initail
+			</div>
+			<!---2nd cell--->
+			<div style="width: 450px; border-right:1px solid; float: left; border-right: 1px solid; height: 20px;">
+				&nbsp;Last Name
+			</div>
+			<!---3rd cell--->
+			<div style=" width: 296px;float: left; height: 20px;">
+				<b>Your social security number</b>
+			</div>
+		</div>
+
+		<!---4th row--->
+		<div style="background-color: #D8D8D8; height: 20px; width: 1200px; float: left; ">
+
+			<!---1st cell--->
+			<div style="width: 450px; float: left; border-right: 1px solid;height: 20px;">
+				<input type="text" name="firstname" required style=" background-color: #D8D8D8;border: none; width: 448px">
+			</div>
+			<!---2nd cell--->
+			<div style="width: 450px; border-right:1px solid; float: left; border-right: 1px solid;height: 20px;">
+				<!---text field validation, user must input their name-->
+				<input type="text" name="Lastname" required style=" background-color: #D8D8D8;border: none;width: 448px;">
+			</div>
+
+			<!---3rd cell--->
+			<div style=" width: 296px;float: left;height: 20px;">
+				<!--security number validation-->
+				<input type="text" name="SNM" maxlength="9" style=" background-color: #D8D8D8;border: none;;width: 294px;" onKeyUp="value=value.replace(/[^\d]/g,'') "
+				 onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+			</div>
+		</div>
+
+		<!---5th row--->
+		<div style="background-color: lightcyan; height: 20px; width: 1200px;float: left; border-top: 1px solid">
+
+			<b>Your standard deduction: </b>
+			<input type="radio" name="test" style=" background-color: #D8D8D8"> Someone can claim you as a dependent
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="test" style=" background-color: #D8D8D8"> You were born before January 2,
+			1954&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="test" style=" background-color: #D8D8D8"> You are blind&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+
+		<!---6th row --->
+		<div style="background-color: white; height: 20px; width: 1200px; float: left; border-top: 1px solid">
+			<!---1st cell--->
+			<div style="width: 450px; float: left; border-right: 1px solid; height: 20px;">
+				If joint return, spouse's first name and initial
+			</div>
+			<!---2nd cell--->
+			<div style="width: 450px; border-right:1px solid; float: left; border-right: 1px solid; height: 20px;">
+				&nbsp;Last Name
+			</div>
+			<!---3rd cell--->
+			<div style=" width: 296px;float: left; height: 20px;">
+				<b>Spouse’s social security number</b>
+			</div>
+		</div>
+
+		<!---7th row--->
+		<div style="background-color: #D8D8D8; height: 20px; width: 1200px; float: left; ">
+
+			<!---1st cell--->
+			<div style="width: 450px; float: left; border-right: 1px solid;">
+				<input type="text" name="sopuseFirstname" required style=" background-color: #D8D8D8;border: none; width: 448px;">
+			</div>
+			<!---2nd cell--->
+			<div style="width: 450px; border-right:1px solid; float: left; border-right: 1px solid; ">
+				<!---text field validation, user must input their name-->
+				<input type="text" name="SpousLastname" required style=" background-color: #D8D8D8;border: none;width: 448px;">
+			</div>
+
+			<!---3rd cell--->
+			<div style=" width: 296px;float: left;">
+				<!--security number validation-->
+				<input type="text" name="SNM" maxlength="9" required style=" background-color: #D8D8D8;border: none;width: 294px;" onKeyUp="value=value.replace(/[^\d]/g,'') "
+				 onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+			</div>
+		</div>
+
+		<!---8th row  spouse standard deduction--->
+		<div style="background-color: lightcyan; height: 40px; width: 1200px;float: left; border-top: 1px solid;">
+			<!---1st cell--->
+			<div style="width: 950px; float: left; border-right: 1px solid;">
+				<b>Spouse standard deduction: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+				<!--checkbox validation, user can only choose one box-->
+				<input type="radio" name="spouse's test" style=" background-color: #D8D8D8;border: none;"> Someone can claim your
+				spouse as a dependent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="spouse's test" style=" background-color: #D8D8D8;border: none;"> Your spouse were born
+				before January 2, 1954&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="spouse's test" style=" background-color: #D8D8D8; border: none;"> Spouse is
+				blind&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="spouse's test" style=" background-color: #D8D8D8; border: none;"> Spouse itemizes on a
+				separate return or you were dual-status alien&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</div>
+			<!---2nd cell--->
+			<div style="width: 248px; float: left; ">
+				<input type="checkbox" name="Full-year" style=" background-color: #D8D8D8;border: none;">
+				Full-year health care coverage or exempt(see inst.)
+			</div>
+
+		</div>
+
+
+		<!---9th row Home address--->
+		<div style="background-color: white; height: 20px; width: 1200px; float: left; border-top: 1px solid">
+			<!---1st cell--->
+			<div style="background-color:  white; height: 20px; width: 890px; float: left;  border-right: 1px solid;">Home
+				address(number and street). If you have a P.O. box, see instructions.
+			</div>
+
+			<!---2nd cell--->
+			<div style="background-color:  white; height: 20px; width: 59px; float: left; border-right: 1px solid;">
+				Apt. no.
+			</div>
+			<!---3rd cell--->
+			<div style="background-color:  lightcyan; height: 20px; width: 248px; float: left;">
+				Presidential Election Campaign(see inst.)
+
+			</div>
+
+
+		</div>
+
+		<!---10th row--->
+		<div style="background-color: #D8D8D8; height: 20px; width: 1200px; float: left; ">
+			<!---text field validation, user must input their address-->
+			<!---1st cell--->
+			<div style="background-color: white; height: 20px; width: 890px; float: left; border-top: 1px solid; border-right: 1px solid;">
+
+				<input type="text" name="address" style="width:890px; height:16px; background-color: #D8D8D8; border: none; "
+				 required>
+			</div>
+
+			<!---2nd cell--->
+			<div style="background-color: lightcyan; height: 20px; width: 59px; float: left; border-top: 1px solid; ">
+
+				<input type="text" name="address" style="width:55px; height:15px; background-color: #D8D8D8; border-left: none; border-top: none; border-left: solid 1px; "
+				 required>
+			</div>
+
+
+			<!---3rd cell--->
+			<div style="background-color:  lightcyan; height:20px; width: 248px; float: left; border-left: solid 1px">
+				inst)
+				<input type="radio" name="Presidential"> You
+				<input type="radio" name="Presidential"> Spouse
+			</div>
+		</div>
+
+
+		<!-- 11th row--->
+		<div style="background-color: white; height: 20px; width: 1200px; float: left; border-top: 1px solid; ; padding-bottom: 0px ">
+			<!-- 1st cell--->
+			<div style="height: 20px; width: 950px; float: left;">City, town or post office, state, and ZIP code. If you have a
+				foreign address, attach Schedule 6.
+			</div>
+
+			<!-- 2st cell--->
+			<div style="height: 20px; width: 248px; float: left; border-left: solid 1px; background-color: lightcyan;">
+				if more than four dependents,
+			</div>
+
+
+		</div>
+
+		<!---12th row--->
+		<div style="background-color: #D8D8D8; height: 20px; width: 1200px; float: left;">
+			<!-- 1st cell--->
+			<!---text field validation, user must input their address-->
+			<div style="height: 20px; width: 950px; float: left; border-top: solid 1px;">
+				<input type="text" name="City" style="width:948px; height:15px; background-color: #D8D8D8; border: none;" required>
+			</div>
+
+			<!-- 2st cell--->
+			<div style="height: 20px; width: 248px; float: left; border-left: solid 1px; background-color: lightcyan;">
+				see inst. and &radic; here &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="checkbox" name="four dependents">
+			</div>
+
+		</div>
+
+		<!---13th row  Dependents--->
+		<div style="background-color: lightcyan;height: 20px; width: 1200px; float: left; border-top: solid 1px;">
+			<!-- 1st cell--->
+			<div style="height: 20px; width: 350px; text-align: left; border-right: solid 1px; float: left;">
+				<b>Depedents</b> (see instructions):
+			</div>
+
+			<!-- 2nd cell--->
+			<div style="height: 20px; width: 250px; text-align: center; border-right: solid 1px; float: left;">
+				<b>(2)</b> Social security number
+			</div>
+
+			<!-- 3rd cell--->
+			<div style="height: 20px; width: 250px; text-align: center; border-right: solid 1px; float: left;">
+				<b>(3)</b> Relationship to you
+			</div>
+
+			<!-- 4st cell--->
+			<div style="height: 20px; width: 346px; text-align: center; float: left;">
+				<b>(4) &radic;</b> if qualifies for(see inst.):
+			</div>
+		</div>
+
+		<!---14th row--->
+		<div style="background-color: lightcyan;height: 20px; width: 1200px; float: left; ">
+			<!-- 1st cell--->
+			<div style="height: 20px; width: 350px; text-align: left; border-right: solid 1px; float: left; border-top: solid 1px;">
+				<div style="height: 20px; width: 175px; text-align: left; float: left;">
+					<b>(1)</b> First name
+				</div>
+
+				<div style="height: 20px; width: 174px; text-align: center; float: left;">
+					Last name
+				</div>
+
+			</div>
+
+			<!-- 2nd cell--->
+			<div style="height: 20px; width: 250px; text-align: center; border-right: solid 1px; float: left;">
+
+			</div>
+
+			<!-- 3rd cell--->
+			<div style="height: 20px; width: 250px; text-align: center; border-right: solid 1px; float: left;">
+
+			</div>
+
+			<!-- 4st cell--->
+			<div style="height: 20px; width: 346px; text-align: center; float: left; border-top: solid 1px;">
+				<div style="height: 20px; width: 160px; text-align: center; float: left;">
+					Child tax credit
+				</div>
+
+
+				<div style="height: 20px; width: 184px; text-align: center; float: left;">
+					Credit for other dependents
+				</div>
+			</div>
+		</div>
+
+		<!---15th row--->
+		<div style="background-color: #D8D8D8 ;height: 20px; width: 1200px; float: left; border-top: solid 1px;">
+			<!-- 1st cell--->
+			<div style="height: 20px; width: 350px; text-align: left; border-right: solid 1px; float: left;">
+				<!--text feild validation validation-->
+				<input type="text" name="textfeild1" style="border: none; width: 348px; background-color: #D8D8D8" required>
+
+			</div>
+
+			<!-- 2nd cell--->
+			<div style="height: 20px; width: 250px; text-align: center; border-right: solid 1px; float: left;">
+				<!--Social security number validation validation-->
+				<input type="text" name="textfeild2" style="border: none; width: 248px; background-color: #D8D8D8" required;
+				 maxlength="9" ; onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+			</div>
+
+			<!-- 3rd cell--->
+			<div style="height: 20px; width: 250px; text-align: center; border-right: solid 1px; float: left;">
+				<!--text feild validation validation-->
+				<input type="text" name="textfeild3" style="border: none; width: 248px; background-color: #D8D8D8" required;>
+			</div>
+
+			<!-- 4st cell--->
+			<div style="height: 20px; width: 346px; text-align: center; float: left;">
+				<div style="height: 20px; width: 160px; text-align: center; float: left; border-right: solid 1px;">
+
+					<input type="radio" name="selectfeild" style="width: 160px; margin-left: 55px">
+				</div>
+				<div style="height: 20px; width: 184px; text-align: center; float: left; ">
+					<input type="radio" name="selectfeild" style="width: 160px; margin-left: 65px">
+				</div>
+			</div>
+		</div>
+
+		<!---16th row--->
+		<div style="background-color: #D8D8D8 ;height: 20px; width: 1200px; float: left; border-top: solid 1px;">
+			<!-- 1st cell--->
+			<div style="height: 20px; width: 350px; text-align: left; border-right: solid 1px; float: left;">
+				<!--text feild validation validation-->
+				<input type="text" name="textfeild1" style="border: none; width: 348px; background-color: #D8D8D8"; required>
+
+			</div>
+
+			<!-- 2nd cell--->
+			<div style="height: 20px; width: 250px; text-align: center; border-right: solid 1px; float: left;">
+				<!--text feild validation validation-->
+				<input type="text" name="textfeild2" style="border: none; width: 248px; background-color: #D8D8D8"; required;
+				 maxlength="9" ; onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+			</div>
+
+			<!-- 3rd cell--->
+			<div style="height: 20px; width: 250px; text-align: center; border-right: solid 1px; float: left;">
+				<!--text feild validation validation-->
+				<input type="text" name="textfeild3" style="border: none; width: 248px; background-color: #D8D8D8" required;>
+			</div>
+
+			<!-- 4st cell--->
+			<div style="height: 20px; width: 346px; text-align: center; float: left;">
+				<div style="height: 20px; width: 160px; text-align: center; float: left; border-right: solid 1px;">
+
+					<input type="radio" name="selectfeild1" style="width: 160px; margin-left: 55px">
+				</div>
+
+
+				<div style="height: 20px; width: 184px; text-align: center; float: left; ">
+					<input type="radio" name="selectfeild1" style="width: 160px; margin-left: 65px">
+				</div>
+			</div>
+
+		</div>
+
+
+		<!---17th row--->
+		<div style="background-color: #D8D8D8 ;height: 20px; width: 1200px; float: left; border-top: solid 1px;">
+			<!-- 1st cell--->
+			<div style="height: 20px; width: 350px; text-align: left; border-right: solid 1px; float: left;">
+				<!--text feild validation validation-->
+				<input type="text" name="textfeild1" style="border: none; width: 348px; background-color: #D8D8D8" required>
+
+			</div>
+
+			<!-- 2nd cell--->
+			<div style="height: 20px; width: 250px; text-align: center; border-right: solid 1px; float: left;">
+				<!--text feild validation validation-->
+				<input type="text" name="textfeild2" style="border: none; width: 248px; background-color: #D8D8D8" required;
+				 maxlength="9" ; onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+			</div>
+
+			<!-- 3rd cell--->
+			<div style="height: 20px; width: 250px; text-align: center; border-right: solid 1px; float: left;">
+				<!--text feild validation validation-->
+				<input type="text" name="textfeild3" style="border: none; width: 248px; background-color: #D8D8D8" required;>
+			</div>
+
+			<!-- 4st cell--->
+			<div style="height: 20px; width: 346px; text-align: center; float: left;">
+				<div style="height: 20px; width: 160px; text-align: center; float: left; border-right: solid 1px;">
+
+					<input type="radio" name="selectfeild2" style="width: 160px; margin-left: 55px">
+				</div>
+
+
+				<div style="height: 20px; width: 184px; text-align: center; float: left; ">
+					<input type="radio" name="selectfeild2" style="width: 160px; margin-left: 65px">
+				</div>
+			</div>
+		</div>
+		<!---18th row--->
+		<div style="background-color: #D8D8D8 ;height: 20px; width: 1200px; float: left; border-top: solid 1px;">
+			<!-- 1st cell--->
+			<div style="height: 20px; width: 350px; text-align: left; border-right: solid 1px; float: left;">
+				<!--text feild validation validation-->
+				<input type="text" name="textfeild1" style="border: none; width: 348px; background-color: #D8D8D8" required>
+
+			</div>
+
+			<!-- 2nd cell--->
+			<div style="height: 20px; width: 250px; text-align: center; border-right: solid 1px; float: left;">
+				<!--text feild validation validation-->
+				<input type="text" name="textfeild2" style="border: none; width: 248px; background-color: #D8D8D8" required;
+				 maxlength="9" ; onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+			</div>
+
+			<!-- 3rd cell--->
+			<div style="height: 20px; width: 250px; text-align: center; border-right: solid 1px; float: left;">
+				<!--text feild validation validation-->
+				<input type="text" name="textfeild3" style="border: none; width: 248px; background-color: #D8D8D8" required;>
+			</div>
+
+			<!-- 4st cell--->
+			<div style="height: 20px; width: 346px; text-align: center; float: left;">
+				<div style="height: 20px; width: 160px; text-align: center; float: left; border-right: solid 1px;">
+
+					<input type="radio" name="selectfeild3" style="width: 160px; margin-left: 55px">
+				</div>
+
+
+				<div style="height: 20px; width: 184px; text-align: center; float: left; ">
+					<input type="radio" name="selectfeild3" style="width: 160px; margin-left: 65px">
+				</div>
+			</div>
+		</div>
+
+		<!--- Sign Here 18th row--->
+		<div style="background-color: lightcyan;height: 120px; width: 1200px; float: left; border-top: solid 1px; ">
+			<!---the 1st coulum-->
+			<div style="height: 120px; width: 150px; float: left;  float: left; padding-right: 20px">
+				<div style="float: left; width: 150px">
+					<font style="font-size: 160%"> <b>Sign</b></font>
+				</div>
+				<div style="float: left; width: 150px">
+					<font style="font-size: 160%"> <b>here</b></font>
+				</div>
+
+
+				<div style="float: left; width: 150px; font-size: 90%; padding-top: 5px; ">
+					Joint return? See instructions. Keep a copy for
+					your records.
+				</div>
+			</div>
+
+			<!---the 2nd coulum-->
+			<div style="height: 120px; width: 1030px; float: left;  float: left;">
+				<!--the 1st row-->
+				<div style="height: 33px; width: 1030px; float: left;  float: left; font-size: 70%">
+					Under penalties of perjury, I declare that I have examined this return and accompanying schedules and statements,
+					and to the best of my knowledge and belief, they are true, correct, and complete. Declaration of preparer (other
+					than taxpayer) is based on all information of which preparer has any knowledge.
+				</div>
+				<!--the 2nd row-->
+				<div style="height: 46px; width: 1030px; float: left;background-color: white;">
+					<div style="height: 46px; width: 450px; float: left; background-color: white; border-right: solid 1px; font-size: 80%; padding-left: 5px;">
+						Your signature
+
+					</div>
+
+					<div style="height: 46px; width: 72px; float: left;  float: left; background-color: white; border-right: solid 1px; font-size: 90%">
+						Date
+					</div>
+
+
+					<div style="height: 46px; width: 250px; float: left;  float: left; background-color: white; border-right: solid 1px;">
+						<div style="height: 15px;float: left; padding: 1px;font-size: 90%;">
+							Your occupation
+						</div>
+
+						<div>
+							<input type="text" name="Youroccupation" style="background-color: #D8D8D8; width: 248px; height:29px;border: none; ">
+
+						</div>
+
+					</div>
+
+					<div style="height: 41px; width: 250px; float: left;  float: left; background-color: white; font-size: 80%; padding-top: 10px;">
+						If the IRS sent you an Identity Protection PIN, enter it here (see inst.)
+						<input type="text" name="IRS1" maxlength="1" style="width: 10px; background-color: #D8D8D8; border: 1px solid;"
+						 onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+						<input type="text" name="IRS2" maxlength="1" style="width: 10px; background-color: #D8D8D8; border: 1px solid;"
+						 onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+						<input type="text" name="IRS3" maxlength="1" style="width: 10px; background-color: #D8D8D8; border: 1px solid;"
+						 onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+						<input type="text" name="IRS4" maxlength="1" style="width: 10px; background-color: #D8D8D8; border: 1px solid;"
+						 onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+						<input type="text" name="IRS5" maxlength="1" style="width: 10px; background-color: #D8D8D8; border: 1px solid;"
+						 onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+						<input type="text" name="IRS6" maxlength="1" style="width: 10px; background-color: #D8D8D8; border: 1px solid;"
+						 onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+					</div>
+				</div>
+
+				<!--the 3rd row-->
+				<div style="height: 46px; width: 1030px; float: left;background-color: white;  border-top: 1px solid;">
+					<div style="height: 40px; width: 450px; float: left; background-color: white; border-right: solid 1px; font-size: 80%; padding-left: 5px;">
+						Spouse's signature. If a joint return, both must sign
+
+					</div>
+
+					<div style="height: 40px; width: 72px; float: left;  float: left; background-color: white; border-right: solid 1px; font-size: 90%">
+						Date
+					</div>
+
+
+					<div style="height: 40px; width: 250px; float: left;  float: left; background-color: white; border-right: solid 1px;">
+						<div style="height: 15px;float: left; padding: 1px;font-size: 90%;">
+							Spouse's occupation
+						</div>
+
+						<div>
+							<input type="text" name="Youroccupation" style="background-color: #D8D8D8; width: 248px; height:21px;border: none; " required>
+
+						</div>
+
+					</div>
+
+					<div style="height: 35px; width: 250px; float: left;  float: left; background-color: white; font-size: 80%; padding-top: 5px;">
+						If the IRS sent you an Identity Protection PIN, enter it here (see inst.)
+						<input type="text" name="IRS1" maxlength="1" style="width: 10px; background-color: #D8D8D8; border: 1px solid;"
+						 onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+						<input type="text" name="IRS2" maxlength="1" style="width: 10px; background-color: #D8D8D8; border: 1px solid;"
+						 onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+						<input type="text" name="IRS3" maxlength="1" style="width: 10px; background-color: #D8D8D8; border: 1px solid;"
+						 onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+						<input type="text" name="IRS4" maxlength="1" style="width: 10px; background-color: #D8D8D8; border: 1px solid;"
+						 onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+						<input type="text" name="IRS5" maxlength="1" style="width: 10px; background-color: #D8D8D8; border: 1px solid;"
+						 onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+						<input type="text" name="IRS6" maxlength="1" style="width: 10px; background-color: #D8D8D8; border: 1px solid;"
+						 onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					</div>
+				</div>
+			</div>
+
+
+			<!---Paid Preparer Use Only 19th row--->
+			<div style="background-color: lightcyan;height: 95px; width: 1200px; float: left; border-top: solid 2px; ">
+				<!---the 1st coulum-->
+				<div style="height: 93px; width: 150px; float: left;  float: left; padding-right: 20px; ">
+					<font style="font-size: 160%"> <b>Paid Preparer Use Only</b></font>
+				</div>
+
+				<!---the 2nd coulum-->
+				<div style="height: 95px; width: 1030px; float: left;  float: left; background-color: white;">
+					<!--the 1st row(preparer's name/Firm's name)/check-->
+					<div style="height: 71px; width: 1030px; float: left;  float: left; font-size: 90%; ">
+						<!---Preparer's name/Firm's name -->
+						<div style="height: 71px; width: 900px; float: left;  float: left; ">
+
+							<!--Preparer's name /text-->
+							<div style="height: 50px; width: 900px; float: left;  float: left; ">
+								<!--Preparer's name the 1st row-->
+								<div style="height: 18px; width: 900px; float: left;  float: left; ">
+									<!--Preparer's name-->
+									<div style="height: 18px; width: 200px; float: left;  float: left;">
+										Preparer's name
+									</div>
+
+									<!--Preparer's signature-->
+									<div style="height: 18px; width: 400px; float: left;  float: left; border-left: solid 1px;">
+										Preparer's signature
+									</div>
+
+									<!--PTIN the -->
+									<div style="height: 18px; width: 150px; float: left;  float: left; border-left: solid 1px;">
+										PTIN
+									</div>
+									<!--Firm's EIN-->
+									<div style="height: 18px; width: 147px; float: left;  float: left; border-left: solid 1px;">
+										Firm's EIN
+									</div>
+								</div>
+
+								<!--Preparer's name text-->
+								<div style="height: 31px; width: 900px; float: left;  float: left; border-top: 1px solid; ">
+									<!--Preparer's name the 1st row-->
+									<div style="height: 31px; width: 200px; float: left;  float: left; ">
+										<input type="text" name="preparer'sopuseFirstname" style="width: 199px ; height: 31px; border: none; background-color: #D8D8D8">
+									</div>
+
+									<!--Preparer's signature-->
+									<div style="height: 31px; width: 400px; float: left;  float: left; border-left: solid 1px;">
+
+									</div>
+
+									<!--PTIN the -->
+									<div style="height: 31px; width: 150px; float: left;  float: left; border-left: solid 1px;">
+										<input type="text" name="ptin" style="width: 149px ; height: 31px; border: none; background-color: #D8D8D8">
+									</div>
+									<!--Firm's EIN-->
+									<div style="height: 31px; width: 147px; float: left;  float: left; border-left: solid 1px;">
+										<input type="text" name="EIN" style="width: 145px ; height: 31px; border: none; background-color: #D8D8D8">
+									</div>
+								</div>
+							</div>
+
+							<!--Firm's name the 2nd row-->
+							<div style="height: 20px; width: 900px; float: left;  float: left; background-color: white; border-top: 1px solid">
+
+								<!--Firm's name the 1st colum-->
+								<div style="height:20px; width: 600px; float: left;   background-color: white; border-right: 1px solid;">
+									Firm's name
+									<input type="text" name="firmname" style="width: 523px ; height: 19px; border: none; background-color: #D8D8D8" required>
+								</div>
+
+								<!--Phone no. the 2nd colum-->
+								<div style="height: 20px; width: 299px; float: left;background-color: white;">
+									Phone no.
+									<input type="text" name="phoneno" style="width: 235px; height: 18px; border: none; background-color: #D8D8D8"; onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+									 ; maxlength="11"required> 
+								</div>
+							</div>
+
+						</div>
+
+						<!---Check if: the 2nd coulum-->
+						<div style="height: 71px; width: 129px; float: left;  float: left; font-size: 13px; border-left: 1px solid">
+							<p style="line-height: 10%"><b>Check if:</b></p>
+							<input type="radio" name="Checkif"> 3rd Party Designee
+							<br>
+							<input type="radio" name="Checkif"> Self-employed
+						</div>
+
+					</div>
+
+					<!--Firm's addresss the 2nd row-->
+					<div style="height: 24px; width: 1030px; float: left;  float: left; font-size: 90%; border-top: solid 1px;">
+						Firm's address
+						<input type="text" name="Firm's address" required style="width: 940px; background-color: #D8D8D8; height:22px; border: none;">
+					</div>
+
+				</div>
+			</div>
+
+
+			<!---Paid Preparer Use Only 20th row--->
+			<div style="background-color: lightcyan;height: 22px; width: 1200px; float: left; border-top: solid 2px; padding-bottom: 5px">
+				<p style="font-size: 15px; line-height: 25%; "><b>For Disclosure, Privacy Act, and Paperwork Reduction Act Notice,
+						see separate instructions.</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span style="font-size: 12px">Cat. No. 11320B </span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 12px">Form</span> <span style="font-size: 20px"><b>1040</b></span></s>
+					<span style="font-size: 12px">(2018)</span></p>
+
+			</div>
+		</div>
+	</div>
+	<hr style="width: 1300px">
+
+	<!----2nd page--->
+	<div style="width: 1200px; height: 20px; padding-left: 10px; padding-right: 10px; background-color: lightcyan;">
+		Form 1040(2018) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+		&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+		&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+		&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Page<b>2</b></font>
+	</div>
+
+	<!--first div-->
+	<div style="width: 1200px; height: 723px;  margin-left: 10px;border-top: 1px solid; ">
+		<!--Attach From(s)-->
+		<div style="width: 1200px; height: 550px; background-color: white; float: left; ">
+			<!---1st colum Standard deduction---->
+			<div style="width: 200px; height: 550px;  float: left; padding-top: 50px; font-size: 15px">
+				Attach Form(s) W-2. Also attach Form(s) W-2G and 1099-R if tax
+				<br><br><br><br><br><br><br><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Standard Deduction for—</b>
+				<ul>
+					<li>Single or married filing separately,$12,000 </li>
+					<li>Married filingjointly or Qualifying widow(er),$24,000 </li>
+					<li>Head of household, $18,000
+					</li>
+					<li> If you checked any box under Standard deduction, see instructions</li>
+				</ul>
+			</div>
+
+			<!---2nd colum ---->
+			<div style="width: 797px; height: 550px; border-right: 1px solid; float: left; background-color: lightcyan; font-size: 15px; ">
+				<p style="margin: 5px auto">
+					<b>1&nbsp;&nbsp;&nbsp;</b> &nbsp;Wages, salaries, tips, etc. Attach Form(s) W-2 </p>
+
+				<p style="margin: 5px auto">
+					<b>2a&nbsp;&nbsp;&nbsp;</b> Tax-exempt interest &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp; &nbsp;
+					<b>2a</b>
+					<input type="text" name="2a" style="width: 100px; height: 20px;background-color: #D8D8D8; border: none;" required onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+					<input type="text" name="2a-2" style="width: 50px;height: 20px; background-color: #D8D8D8; border: none;" required onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"> &nbsp;
+					&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					<b>b</b> Taxable interest
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>3a&nbsp;&nbsp;&nbsp;</b> Qualified dividends &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp; &nbsp;
+					<b>3a</b>
+					<input type="text" name="3a" style="width: 100px; height: 20px;background-color: #D8D8D8; border: none;" required onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+					<input type="text" name="3a-2" style="width: 50px; height: 20px; background-color: #D8D8D8; border: none;" required onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"> &nbsp;
+					&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					<b>b</b> Qualified dividends
+				</p>
+
+
+
+				<p style="margin: 5px auto">
+					<b>4a&nbsp;&nbsp;&nbsp;</b> IRAs, pensions, and annuities&nbsp;&nbsp; &nbsp;
+					<b>4a</b>
+					<input type="text" name="4a" style="width: 100px; height: 20px;background-color: #D8D8D8; border: none;" required onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+					<input type="text" name="4a-2" style="width: 50px; height: 20px; background-color: #D8D8D8; border: none;" required onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"> &nbsp;
+					&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					<b>b</b> Taxable amount
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>5a&nbsp;&nbsp;&nbsp;</b> Social security benefits &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp; &nbsp;
+					<b>5a</b>
+					<input type="text" name="5a" style="width: 100px; height: 20px;background-color: #D8D8D8; border: none;" required onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+					<input type="text" name="5a-2" style="width: 50px; height: 20px; background-color: #D8D8D8; border: none;" required onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"> &nbsp;
+					&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					<b>b</b> Taxable amount
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>6&nbsp;&nbsp;&nbsp;&nbsp;</b> Total income. Add lines 1 through 5. Add any amount from Schedule 1, line 22
+					<input type="text" name="6" style="width: 100px; height: 20px;background-color: #D8D8D8; border: none; border-bottom: 1px solid;" required>
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>7&nbsp;&nbsp;&nbsp;&nbsp;</b> Adjusted gross income. If you have no adjustments to income, enter the amount
+					from line 6; otherwise,subtract &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;ScheduleSchedule 1, line 36, from line 6
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>8 &nbsp;&nbsp;&nbsp;&nbsp;Standard deduction or itemized deductions</b> (from Schedule A)
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>9 </b>&nbsp;&nbsp;&nbsp;&nbsp;Qualified business income deduction (see instructions)
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>10</b>&nbsp;&nbsp;&nbsp;Taxable income. Subtract lines 8 and 9 from line 7. If zero or less, enter -0-
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>11</b>&nbsp;&nbsp;a Tax (see inst.)
+					<input type="text" name="7" style="width: 50px; height: 20px;background-color: #D8D8D8; border: none; border-bottom: 1px solid;" required>
+					(check if any from:
+					&nbsp; &nbsp; <b>1</b>
+					<input type="checkbox" name="8"> From(s) 8814
+
+					&nbsp; &nbsp; <b>2</b>
+					<input type="checkbox" name="8"> From(s) 4972
+
+					&nbsp; &nbsp; <b>3</b>
+					<input type="checkbox" name="8">
+					<input type="text" name="7" style="width: 100px; height: 20px;background-color: #D8D8D8; border: none; border-bottom: 1px solid;" required>
+				</p>
+
+				<p style="margin: 5px auto">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>b Add</b> any amount from Schedule 2 and check here.
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+					&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; ▶
+					<input type="checkbox" name="9">
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>12</b> &nbsp;
+					<b>a </b>Child tax credit/credit for other dependents
+					<input type="text" name="7" style="width: 40px; height: 20px;background-color: #D8D8D8;  border: none;border-bottom:solid 1px;" required>
+					<b>b Add</b> any amount from Schedule 3 and check here ▶
+					<input type="checkbox" name="7">
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>13</b>&nbsp;&nbsp;&nbsp;Subtract line 12 from line 11. If zero or less, enter -0-
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>14</b>&nbsp;&nbsp;&nbsp;Other taxes. Attach Schedule 4
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>15</b>&nbsp;&nbsp;&nbsp;Total tax. Add lines 13 and 14
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>16</b>&nbsp;&nbsp;&nbsp;Federal income tax withheld from Forms W-2 and 1099
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>17</b>&nbsp;&nbsp;&nbsp;Refundable credits:
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<b>a</b> EIC (see inst.)
+					<input type="text" name="8" style="width: 70px; height: 20px;background-color: #D8D8D8; border: none; border-bottom:solid 1px;" required>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<b>b</b> Sch. 8812
+					<input type="text" name="8" style="width: 70px; height: 20px;background-color: #D8D8D8; border: none; border-bottom:solid 1px;" required>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+					<b>c</b> Form 8863
+					<input type="text" name="8" style="width: 70px; height: 20px;background-color: #D8D8D8; border: none; border-bottom:solid 1px;" required>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</p>
+
+				<p style="margin: 5px auto">
+					&nbsp; &nbsp; &nbsp; &nbsp;<b>add</b> any amount from Schedule 5
+					<input type="text" name="8" style="width: 70px; height: 20px;background-color: #D8D8D8; border: none; border-bottom:solid 1px;" required>
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>18</b>&nbsp; &nbsp;Add lines 16 and 17. These are your total payments
+				</p>
+			</div>
+
+
+			<!---3rd colum ---->
+			<div style="width: 200px; height: 550px; float: left; ">
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; ">
+					<b>1</b>
+				</div>
+
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:28px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:28px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid;"required>
+
+					<b>2b</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:28px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:28px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid;" required>
+					<b>3b</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid;" required>
+					<b>4b</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required> 
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid;" required>
+					<b>5b</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; ">
+					<b>6</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; ">
+					<b>7</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; ">
+					<b>8</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; " >
+					<b>9</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;"required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; ">
+					<b>10</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; ">
+					<b>11</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; ">
+					<b>12</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; ">
+					<b>13</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; ">
+					<b>14</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; ">
+					<b>15</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; ">
+					<b>16</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid; ">
+					<b>17</b>
+				</div>
+				<div style="width: 130px; height: 30px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 30px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:27px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 23px; float: left;text-align: center; border-right: 1px solid; ">
+					<b>18</b>
+				</div>
+				<div style="width: 130px; height: 23px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:21px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 23px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:21px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+			</div>
+		</div>
+
+		<!--Refund-->
+		<div style="width: 1200px; height: 123px; border-top: 1px solid; float: left;">
+			<!---1st colum Standard deduction---->
+			<div style="width: 200px; height: 123px;  float: left; ">
+				<p style="font-size: 25px"><b>Refund</b></p>
+				<p> Direct deposit?
+					See instructions. </p>
+			</div>
+
+			<!---2nd colum ---->
+			<div style="width: 797px; height: 123px; border-right: 1px solid; float: left; background-color: lightcyan; font-size: 15px; ">
+
+				<p style="margin: 5px auto">
+					<b>19&nbsp;&nbsp;&nbsp;</b>If line 18 is more than line 15, subtract line 15 from line 18. This is the amount you
+					<b>overpaid </b>
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>20a&nbsp; &nbsp;</b>Amount of line 19 you want <b>refunded to you. </b>If Form 8888 is attached, check here
+					&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+					&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;▶
+					<input type="checkbox">
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>▶b&nbsp; &nbsp;</b>Routing number
+					<input type="text" style="width: 10px;" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<b>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;▶ c</b> Type:
+					<input type="radio" name="routingnum">Checking &nbsp; &nbsp;
+					<input type="radio" name="routingnum">Saving
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>▶d&nbsp; &nbsp;</b>Account number
+					<input type="text" style="width: 10px;" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"  required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"  required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"  required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+					<input type="text" style="width: 10px" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>21&nbsp; &nbsp;</b>Amount of line 19 you want <b>applied to your 2019 estimated tax</b>
+					------------------------------------------------------------------------▶
+
+				</p>
+			</div>
+
+			<!---3rd colum ---->
+			<div style="width: 200px; height: 123px; float: left; ">
+				<div style="width: 34px; height: 23px; float: left;text-align: center; border-right: 1px solid; border-bottom: solid 1px; ">
+					<b>19</b>
+				</div>
+				<div style="width: 130px; height: 23px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:21px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 23px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:21px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 23px; float: left;text-align: center; border-right: 1px solid; border-bottom: solid 1px; ">
+					<b>20</b>
+				</div>
+				<div style="width: 130px; height: 23px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:21px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 23px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:21px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 23px; float: left;text-align: center; border-right: 1px solid;  background-color: dimgrey">
+
+				</div>
+				<div style="width: 130px; height: 23px; float: left; border-right: 1px solid;  background-color: white">
+
+				</div>
+
+				<div style="width: 34px; height: 23px; float: left; background-color: white;">
+
+				</div>
+
+				<div style="width: 34px; height: 23px; float: left;text-align: center; border-right: 1px solid;  background-color: dimgrey">
+
+				</div>
+				<div style="width: 130px; height: 23px; float: left; border-right: 1px solid; border-bottom: 1px solid; background-color: white">
+
+				</div>
+
+				<div style="width: 34px; height: 23px; float: left; border-bottom: 1px solid; background-color: white;">
+
+				</div>
+
+				<div style="width: 34px; height: 28px; float: left;text-align: center; border-right: 1px solid; ">
+					<b>21</b>
+				</div>
+				<div style="width: 130px; height: 28px; float: left; border-right: 1px solid; ">
+					<input type="text" name="7" style="width: 128px; height:26px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 27px; float: left; ">
+					<input type="text" name="7" style="width: 32px; height:26px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+			</div>
+		</div>
+
+		<!--Amount you Owe-->
+		<div style="width: 1200px; height: 47px; border-top: 1px solid; border-bottom: 2px solid; float: left;">
+			<!---1st colum Standard deduction---->
+			<div style="width: 200px; height: 47px;  float: left; ">
+				<p> <b>Amount You Owe</b></p>
+			</div>
+
+			<!---2nd colum ---->
+			<div style="width: 797px; height: 47px; border-right: 1px solid; float: left; background-color: lightcyan; font-size: 15px; border-bottom: 2px solid">
+
+				<p style="margin: 5px auto">
+					<b>22&nbsp;&nbsp;&nbsp;Amount you owe.</b> Subtract line 18 from line 15. For details on how to pay, see
+					instructions .
+				</p>
+
+				<p style="margin: 5px auto">
+					<b>23&nbsp; &nbsp;</b>Estimated tax penalty (see instructions)
+					-------------------------------------------------------------------------------------------------------▶
+				</p>
+			</div>
+
+			<!---3rd colum ---->
+			<div style="width: 200px; height: 47px; float: left; ">
+				<div style="width: 34px; height: 23px; float: left;text-align: center; border-right: 1px solid; border-bottom: solid 1px; ">
+					<b>22</b>
+				</div>
+				<div style="width: 130px; height: 23px; float: left; border-right: 1px solid; border-bottom: 1px solid;">
+					<input type="text" name="7" style="width: 128px; height:21px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 23px; float: left; border-bottom: 1px solid">
+					<input type="text" name="7" style="width: 32px; height:21px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 23px; float: left;text-align: center; border-right: 1px solid; border-bottom: 1px solid">
+					<b>23</b>
+				</div>
+				<div style="width: 130px; height: 23px; float: left; border-right: 1px solid ">
+					<input type="text" name="7" style="width: 128px; height:20px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+				<div style="width: 34px; height: 23px; float: left; ">
+					<input type="text" name="7" style="width: 32px; height:20px;background-color: #D8D8D8;border:none;" required>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<!--first div close-->
+
+	<div style="width: 1200px; height: 20px; padding-left: 10px; padding-right: 10px; background-color: lightcyan; ">
+		Go to www.irs.gov/Form1040 for instructions and the latest information. &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 12px">Form</span> <span style="font-size: 20px"><b>1040</b></span></s>
+		<span style="font-size: 12px">(2018)</span></p>
+	</div>
+
+
+</body>
+
+</html>
