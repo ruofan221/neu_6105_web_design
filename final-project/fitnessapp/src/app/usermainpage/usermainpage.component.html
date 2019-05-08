@@ -1,0 +1,42 @@
+<!-- <p>
+  usermainpage works!
+</p> -->
+
+
+
+<app-user-nav></app-user-nav>
+
+<div class ="maincontainer">
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let data of slides">
+        <img [src]="data" alt="" >
+      </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+   
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+
+
+  <div class="jumbotron">
+    <h1 class="display-4">Free workout videos with new workouts released every week!</h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. <br>That's why we offer hundreds of free, professionally built workout videos, for every fitness level and goal.</p>
+    <a class="btn btn-primary btn-lg" href="/workoutvideos" role="button">Learn more</a>
+  </div>
+</div>
+ 
+
+
+  <!-- <div id="video" class="video" (click)="videoPlay()"></div> -->
+
+ 
+
+
+<!-- <input type="button" (click)="onLogout()" value="Logout" /> -->

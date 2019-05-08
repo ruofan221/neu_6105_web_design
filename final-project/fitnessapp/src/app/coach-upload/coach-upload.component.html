@@ -1,0 +1,73 @@
+<app-coach-nav></app-coach-nav>
+<div  id="container2">
+  <!-- title -->
+  <div class="page-header">
+          <h3 class="text-center">
+                  Upload Form
+              </h3>
+  </div>
+<form #uploadForm="ngForm" ngForm enctype="multipart/form-data" class="form-horizontal" role="form" (ngSubmit)="uploadForm.valid && update(uploadForm.value)">
+
+  <!-- video -->
+  
+    <!-- Video URL-->
+  <div class="form-group">
+    <label for="videoname" class="col-sm-6 control-label">Video url: </label>
+            <input type="text" class="col-sm-10 form-control"  id="videoname" ngModel name="url" [(ngModel)]="url" value={{videoDetails.url}}
+            [pattern]="urlRegex"  required /> 
+</div>
+
+<div *ngIf="isCorrect" class="alert alert-danger col-sm-6" role="alert">
+  Please enter url in the correct format!!!
+</div>
+
+
+    <!-- Video Name-->
+    <div class="form-group">
+       
+      <label for="Name" class="col-sm-6 control-label">Video name: </label>
+              <input type="text" class="col-sm-10 form-control"   id="Name" ngModel name="Name"  [(ngModel)]="Name" value={{videoDetails.Name}}
+                   required [ngClass]="{'invalid-textbox' :uploadForm.submitted && Name.errors }"> 
+                   <div *ngIf="uploadForm.submitted && Name.errors">
+                      <label *ngIf="Name.errors.required" class="validation-message">This field is required.</label>
+                  </div>
+  </div>
+
+     <!-- Description-->
+     <div class="form-group">
+      <label for="Description" class="col-sm-6 control-label">Description: </label>
+              <input type="text" class="col-sm-10 form-control"  id="Description" ngModel name="Description" [(ngModel)]="Description" value={{videoDetails.Description}}
+              required [ngClass]="{'invalid-textbox' :uploadForm.submitted && Description.errors }" /> 
+              <div *ngIf="uploadForm.submitted && Description.errors">
+                  <label *ngIf="Description.errors.required" class="validation-message">This field is required.</label>
+              </div>
+  </div>
+  
+   <!-- photo -->
+ <div class="top-right">
+  <div class="form-group">
+    <label for="coverurl" class="col-sm-6 control-label">Choose a cover picture for this course: </label>
+    <input type="text" class="col-sm-6 form-control" id="url" 
+ngModel name="coverurl" [(ngModel)]="coverurl" value={{coverurl}} readonly="true"  />         
+    <input type="file" class="col-sm-10 form-control"  (change)="onChangeSelectFile($event)" 
+    id="coverurl"  name="coverurl" required [ngClass]="{'invalid-textbox' :uploadForm.submitted && coverurl.errors}"/> 
+    <div *ngIf="uploadForm.submitted && coverurl.errors">
+        <label *ngIf="coverurl.errors.required" class="validation-message">This field is required.</label>
+    </div>
+</div>
+</div>
+
+    <!-- submit -->
+   
+          <!-- <input type="submit" name="save" class="save" value="Save" /> -->
+<button type="submit" class="btn btn-primary"><i class="fas fa-cloud-upload-alt"></i>UpLoad</button>
+</form>
+
+<!-- Error message -->
+<div class="alert" *ngIf="serverErrorMessages">
+  {{serverErrorMessages}}
+</div>
+
+
+
+

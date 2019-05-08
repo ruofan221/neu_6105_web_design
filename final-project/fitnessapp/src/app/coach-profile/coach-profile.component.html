@@ -1,0 +1,57 @@
+<app-coach-nav></app-coach-nav>
+
+<section id="profile" name="profile">
+     
+        <div class="container desc">
+            <div class="col-lg-2 col-lg-offset-1">
+              <h5>Profile</h5>
+            </div>
+            <hr>
+            <!-- FullName -->
+            <div class="col-lg-6">
+              <p>
+               <label> FullName:</label> {{coachDetails.fullName}}
+              </p>
+            </div>
+              <!-- image -->
+              <div class="col-lg-3" *ngIf="coachDetails.imgurl!==undefine">
+                <p>
+                  <label> Photo:</label> <img class="card-img-top" [src]="coachDetails.imgurl" />  
+                </p>
+             
+              </div>
+          <!-- Email -->
+            <div class="col-lg-6 col-lg-offset-3">
+              <p>
+                <label>  Email:  </label>   {{coachDetails.email}} 
+              </p>
+            </div>
+              <!-- Role -->
+              <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                        <label> Role: </label>    {{coachDetails.role}} 
+                </p>
+              </div>
+               
+                 <!-- height -->
+                 <div class="col-lg-6 col-lg-offset-3">
+                  <p>
+                          <label> Height: </label>    {{coachDetails.height}} 
+                  </p>
+                </div>
+                   <!-- Role -->
+              <div class="col-lg-6 col-lg-offset-3">
+                <p>
+                        <label> Weight: </label>    {{coachDetails.weight}} 
+                </p>
+              </div>
+
+              <button type="submit" class="btn" (click)="edit()"><i class="fa fa-user-edit"></i> Edit Profile</button>
+          <hr>
+        </div>
+        <!--/.container -->
+      </section>
+
+
+
+

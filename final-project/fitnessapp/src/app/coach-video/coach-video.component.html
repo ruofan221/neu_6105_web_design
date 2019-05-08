@@ -1,0 +1,52 @@
+<app-coach-nav></app-coach-nav>
+<!-- my courses
+get all the videos this coach uploaded
+need child component here -->
+<!-- <app-video-detail></app-video-detail> -->
+<div class="workoutVideoMaxContainer">
+        <h1>My courses</h1>
+        </div>
+        
+        
+        <div class="container">
+        
+          <div class="row align-items-start" >
+        
+            <div class="col" *ngFor = "let video of myVideo">
+                <div class="card" style="width: 18rem;" >
+                    <img class="card-img-top" [src]="video.coverurl" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">{{video.Name}}</h5>
+                   <p class="card-text">{{video.Description}}</p>
+                    </div>
+                    <!-- <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Published By: {{video.creater}}</li>
+                      <li class="list-group-item">Calorie Burn: 35-55</li>
+                      <li class="list-group-item">Difficuty: 5</li>
+                      <li class="list-group-item">Equipment: No</li>
+                    </ul> -->
+                    <div class="card-body">
+                      <a href="/coachVideoDetail" [routerLink]="['/coachVideoDetail',video._id]"  class="card-link">Watch Video</a>
+                      
+                      <!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div> -->
+                      
+                    </div>
+     <div class="card-body">
+       
+         <!-- deleteButton -->
+         <button  type="button" name="deletebtn" class="btn btn-sm btn-danger" (click)="deleteVideo(video._id)">Delete</button>
+  
+        
+        </div>
+        
+                  </div>
+            </div>
+        
+          </div>
+        
+        
+          
+            </div>
+           
+         
+        

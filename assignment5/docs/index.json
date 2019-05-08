@@ -1,0 +1,1102 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/binarysearch.js",
+    "content": "/**\n * this is BinarysearchClass.\n */\nexport class Binarysearch {\n/**\n * @todo chop the arr, move the mid to middle of the arr. \n * @todo using Math.floor to calculate the mid.\n * @des if arr[mid] > target, move the hi to mid down one\n * @des if arr[mid] < target, move the lo to mid up one\n * @des if arr[mid] equals to target, return mid;\n * @see https://www.w3schools.com/jsref/jsref_floor.asp\n * @param {number[]} arr - this is the sorted array.\n * @param {number} target - this is the target number.\n * @return {number} if the target number exits in the array, then return it's index, otherwise return -1.\n*/\n\nbinarysearch(arr, target){\n    let hi = arr.length - 1;\n    let lo = 0;\n    let mid = 0;\n    while(lo <= hi){\n        mid = Math.floor((hi + lo) / 2);\n        if(arr[mid] > target) hi = mid - 1;\n        else if(arr[mid] < target) lo = mid + 1;\n        else return mid;\n    };\n    return -1;\n}\n\n}\n/** @test {binarysearch} */\nconsole.log(\"-------Binarysearch test--------\");\n/**\n* @type {Array}\n*/\nlet sortedArray = [0, 1, 2, 13, 54, 78, 89, 90, 100, 105, 204, 304, 1000];\nconsole.log(\"the array is: \" + sortedArray);\n/**\n* @type {Number}\n*/\nlet targetnum = 90;\n/**\n* @type {Object}\n* @property {function} binarysearch\n*/\nlet bs = new Binarysearch();\nconsole.log(\"the target number is: \" + targetnum);\n/**\n* @type {Boolean}\n*/\nlet isFounded = bs.binarysearch(sortedArray, targetnum);;\nif(isFounded === -1) console.log(\"target number is not in the array \" );\nelse console.log(\"the index of the target number is: \" + isFounded );",
+    "static": true,
+    "longname": "/Users/too/Info6150/assignment-5-ruofan221/src/binarysearch.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "class",
+    "name": "Binarysearch",
+    "memberof": "src/binarysearch.js",
+    "static": true,
+    "longname": "src/binarysearch.js~Binarysearch",
+    "access": "public",
+    "export": true,
+    "importPath": "scss-webpack-template/src/binarysearch.js",
+    "importStyle": "{Binarysearch}",
+    "description": "this is BinarysearchClass.",
+    "lineNumber": 4,
+    "interface": false
+  },
+  {
+    "__docId__": 50,
+    "kind": "method",
+    "name": "binarysearch",
+    "memberof": "src/binarysearch.js~Binarysearch",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/binarysearch.js~Binarysearch#binarysearch",
+    "access": "public",
+    "description": "",
+    "see": [
+      "https://www.w3schools.com/jsref/jsref_floor.asp"
+    ],
+    "lineNumber": 17,
+    "todo": [
+      "chop the arr, move the mid to middle of the arr. ",
+      "using Math.floor to calculate the mid."
+    ],
+    "unknown": [
+      {
+        "tagName": "@des",
+        "tagValue": "if arr[mid] > target, move the hi to mid down one"
+      },
+      {
+        "tagName": "@des",
+        "tagValue": "if arr[mid] < target, move the lo to mid up one"
+      },
+      {
+        "tagName": "@des",
+        "tagValue": "if arr[mid] equals to target, return mid;"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arr",
+        "description": "this is the sorted array."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "target",
+        "description": "this is the target number."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": "if the target number exits in the array, then return it's index, otherwise return -1."
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "sortedArray",
+    "memberof": "src/binarysearch.js",
+    "static": true,
+    "longname": "src/binarysearch.js~sortedArray",
+    "access": "public",
+    "export": false,
+    "importPath": "scss-webpack-template/src/binarysearch.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 36,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "variable",
+    "name": "targetnum",
+    "memberof": "src/binarysearch.js",
+    "static": true,
+    "longname": "src/binarysearch.js~targetnum",
+    "access": "public",
+    "export": false,
+    "importPath": "scss-webpack-template/src/binarysearch.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 41,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Number"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "variable",
+    "name": "bs",
+    "memberof": "src/binarysearch.js",
+    "static": true,
+    "longname": "src/binarysearch.js~bs",
+    "access": "public",
+    "export": false,
+    "importPath": "scss-webpack-template/src/binarysearch.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 46,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "binarysearch",
+        "description": ""
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "variable",
+    "name": "isFounded",
+    "memberof": "src/binarysearch.js",
+    "static": true,
+    "longname": "src/binarysearch.js~isFounded",
+    "access": "public",
+    "export": false,
+    "importPath": "scss-webpack-template/src/binarysearch.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 51,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "src/bubblesort.js",
+    "content": "/**\n * this is BinarysearchClass.\n */\nexport class Bubblesort {\n/**\n* @param {number[]} arr - this is the array which is going to be sorted.\n* @return {number[]} return sorted array.\n*/\nbubblesort(arr){\n    let N = arr.length - 1;\n    for(let i = 0; i <= N; i++){\n        for(let j = 0; j <= N - i; j++){\n            if(arr[j] > arr[j + 1]) {\n                let temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            };\n        };\n    };\n    return arr;\n}\n}\n/** @test {bubblesort}*/\n/**\n * @see https://blog.csdn.net/qq_39634880/article/details/80357513\n */\n    /**\n     * @type {Array}\n     */\n    let array = [];\n    for(let i = 0; i < 15; i++){\n        let num = parseInt(Math.random()*100)+1;\n        array.push(num);\n    }\n    console.log();\n    console.log(\"-------Bubblesort test--------\");\n    console.log(\"the random array is: \" + array);\n    /**\n     * @type {Object}\n     * @property {function} bubblesort\n     */\n    let bbs = new Bubblesort();\n    /**\n     * @type {Array}\n     */\n    let sortedArray = bbs.bubblesort(array);\n    console.log();\n    console.log(\"after sorted: \" + sortedArray);",
+    "static": true,
+    "longname": "/Users/too/Info6150/assignment-5-ruofan221/src/bubblesort.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "class",
+    "name": "Bubblesort",
+    "memberof": "src/bubblesort.js",
+    "static": true,
+    "longname": "src/bubblesort.js~Bubblesort",
+    "access": "public",
+    "export": true,
+    "importPath": "scss-webpack-template/src/bubblesort.js",
+    "importStyle": "{Bubblesort}",
+    "description": "this is BinarysearchClass.",
+    "lineNumber": 4,
+    "interface": false
+  },
+  {
+    "__docId__": 57,
+    "kind": "method",
+    "name": "bubblesort",
+    "memberof": "src/bubblesort.js~Bubblesort",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/bubblesort.js~Bubblesort#bubblesort",
+    "access": "public",
+    "description": "",
+    "lineNumber": 9,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arr",
+        "description": "this is the array which is going to be sorted."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number[]"
+      ],
+      "spread": false,
+      "description": "return sorted array."
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "variable",
+    "name": "array",
+    "memberof": "src/bubblesort.js",
+    "static": true,
+    "longname": "src/bubblesort.js~array",
+    "access": "public",
+    "export": false,
+    "importPath": "scss-webpack-template/src/bubblesort.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 30,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "variable",
+    "name": "bbs",
+    "memberof": "src/bubblesort.js",
+    "static": true,
+    "longname": "src/bubblesort.js~bbs",
+    "access": "public",
+    "export": false,
+    "importPath": "scss-webpack-template/src/bubblesort.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 42,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "bubblesort",
+        "description": ""
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "variable",
+    "name": "sortedArray",
+    "memberof": "src/bubblesort.js",
+    "static": true,
+    "longname": "src/bubblesort.js~sortedArray",
+    "access": "public",
+    "export": false,
+    "importPath": "scss-webpack-template/src/bubblesort.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 46,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/palindrome.js",
+    "content": "/**\n * this is Palindrome.\n */\nexport class Palindrome {\n/**\n* @param {string} str - the string that is going to be checked.\n* @return {boolean} if the string is palindrome return true, otherwise return false.\n*/\nisPalindrome(str){\n    /**\n    * @desc get the string to charArray.\n    * @see https://stackoverflow.com/questions/8761627/string-tochararray-equivalent-on-javascript?lq=1\n    */\n    let charArray = [...str];\n    let i = 0;\n    let j = charArray.length - 1;\n    var isPalindrom = true;\n    while(i <= j){\n        if(charArray[i] != charArray[j]) isPalindrom = false;\n        i++;\n        j--;\n    }\n    return isPalindrom;\n};\n}\n\n/** @test {isPalindrome}*/\nconsole.log();\n/**\n* @type {String}\n*/\nlet string1 = \"helloworld\";\n/**\n* @type {String}\n*/\nlet string2 = \"abcdedcba\";\n/**\n* @type {Object}\n* @property {function} isPalindrom\n*/\nlet p = new Palindrome();\n/**\n* @type {Boolean}\n*/\nlet test1 = p.isPalindrome(string1);\n/**\n* @type {Boolean}\n*/\nlet test2 = p.isPalindrome(string2);\nconsole.log(\"-------Palindrome--------\");\n/**\n* @desc test string \"helloworld\".\n*/\nif(test1)\nconsole.log(`\"`+ string1 + `\"` + \"is palindrome\");\nelse console.log(`\"`+ string1 + `\"` + \"is not palindrome\");\n\nconsole.log();\n/**\n* @desc test string \"abcdedcba\".\n*/\nif(test2)\nconsole.log(`\"`+ string2 + `\"` + \"is palindrome\");\nelse console.log(`\"`+ string2 + `\"` + \"is not palindrome\");\nconsole.log(\"\");",
+    "static": true,
+    "longname": "/Users/too/Info6150/assignment-5-ruofan221/src/palindrome.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "class",
+    "name": "Palindrome",
+    "memberof": "src/palindrome.js",
+    "static": true,
+    "longname": "src/palindrome.js~Palindrome",
+    "access": "public",
+    "export": true,
+    "importPath": "scss-webpack-template/src/palindrome.js",
+    "importStyle": "{Palindrome}",
+    "description": "this is Palindrome.",
+    "lineNumber": 4,
+    "interface": false
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "isPalindrome",
+    "memberof": "src/palindrome.js~Palindrome",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/palindrome.js~Palindrome#isPalindrome",
+    "access": "public",
+    "description": "",
+    "lineNumber": 9,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "str",
+        "description": "the string that is going to be checked."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "if the string is palindrome return true, otherwise return false."
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "variable",
+    "name": "string1",
+    "memberof": "src/palindrome.js",
+    "static": true,
+    "longname": "src/palindrome.js~string1",
+    "access": "public",
+    "export": false,
+    "importPath": "scss-webpack-template/src/palindrome.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 32,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "variable",
+    "name": "string2",
+    "memberof": "src/palindrome.js",
+    "static": true,
+    "longname": "src/palindrome.js~string2",
+    "access": "public",
+    "export": false,
+    "importPath": "scss-webpack-template/src/palindrome.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 36,
+    "type": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "variable",
+    "name": "p",
+    "memberof": "src/palindrome.js",
+    "static": true,
+    "longname": "src/palindrome.js~p",
+    "access": "public",
+    "export": false,
+    "importPath": "scss-webpack-template/src/palindrome.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 41,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "isPalindrom",
+        "description": ""
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "variable",
+    "name": "test1",
+    "memberof": "src/palindrome.js",
+    "static": true,
+    "longname": "src/palindrome.js~test1",
+    "access": "public",
+    "export": false,
+    "importPath": "scss-webpack-template/src/palindrome.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 45,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "variable",
+    "name": "test2",
+    "memberof": "src/palindrome.js",
+    "static": true,
+    "longname": "src/palindrome.js~test2",
+    "access": "public",
+    "export": false,
+    "importPath": "scss-webpack-template/src/palindrome.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 49,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# Web Design and user experience :\n## Assignment 5 : \n* Implement below algorithms in JavaScript.\n\n* 1. Binary Search\n\n* 2. Bubble Sort\n\n* 3. Function to check if a string is a palindrome.\n\n## Project Description : \n* Implementation of Binary search, Bubble sort and Palindrome using Javascript\n\n\n## Requirement :\n* Visual Studio code(or sublime) and terminal console.\n\n\n## How to run :\n* STEPS :\n1. Open a git bash shell\n2. Execute a command \"git clone https://github.com/neu-mis-info6150-spring-2019/assignment-5-ruofan221.git\"\n3. Open .js file with terminale.\n4. Input \"node assignment5.js\" command runnnig the file.",
+    "longname": "/Users/too/Info6150/assignment-5-ruofan221/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"scss-webpack-template\",\n  \"version\": \"1.0.0\",\n  \"description\": \"SCSS Webpack template project\",\n  \"private\": true,\n  \"main\": \"main.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\n    \"lint\": \"eslint app\",\n    \"doc\": \"esdoc -c esdoc.json\",\n    \"postinstall\": \"npm run build && npm run doc\"\n    },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/amuthanarulraj/scss-webpack-template.git\"\n  },\n  \"keywords\": [\n    \"SCSS\",\n    \"Webpack\",\n    \"Template\"\n  ],\n  \"author\": \"Amuthan Arulraj\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/amuthanarulraj/scss-webpack-template/issues\"\n  },\n  \"homepage\": \"https://github.com/amuthanarulraj/scss-webpack-template#readme\",\n  \"devDependencies\": {\n    \"clean-webpack-plugin\": \"1.0.1\",\n    \"css-loader\": \"2.1.0\",\n    \"extract-text-webpack-plugin\": \"3.0.2\",\n    \"html-webpack-plugin\": \"3.2.0\",\n    \"mini-css-extract-plugin\": \"0.5.0\",\n    \"node-sass\": \"4.11.0\",\n    \"sass-loader\": \"7.1.0\",\n    \"webpack\": \"4.29.0\",\n    \"webpack-cli\": \"3.2.1\",\n    \"webpack-dev-server\": \"^3.1.14\"\n  },\n  \"dependencies\": {\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\"\n  }\n}\n",
+    "longname": "/Users/too/Info6150/assignment-5-ruofan221/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

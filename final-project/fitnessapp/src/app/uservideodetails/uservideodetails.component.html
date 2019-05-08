@@ -1,0 +1,237 @@
+<app-user-nav></app-user-nav>
+
+
+<div class ="container">
+
+
+<div class="show-header">
+    <div class="container -flush">
+
+
+      <div class="row">
+        <div class="media">
+            <div class="responsive-video">
+              <iframe width="700" height="394" [src]="sanitizer.bypassSecurityTrustResourceUrl(video.video.url)" frameborder="0" allowfullscreen="1"></iframe>
+            </div>
+          </div>
+        </div>
+
+
+<div class="row">
+
+
+      <div class="info has-actions">
+
+        <div class="video-details-wrapper video-detail-wrapper">
+
+          <div class="video-details">
+          <div class="videodetails">
+            <h2 class="heading -x-small caps-half demi details">Video Details</h2>
+          </div>
+            <div class="stats">
+
+
+              
+              <ul class="details-list">
+
+                <div class="favoriteandname">
+                <li>
+                  <span class="detail-header">Name:  </span>
+                  <span class="detail-value demi">{{video.video.Name}}</span>
+                 
+
+                      <!-- favorite -->
+                      <button  class="btn btn-sm btn-success" [disabled]="video.video.user.indexOf(userid) > -1" (click)= "favoriteVideo(video.video._id)"><i class="far fa-heart"></i></button>
+        
+                      <!-- cancle favorite -->
+                      <button  class="btn btn-sm btn-warning" *ngIf="video.video.user.indexOf(userid) > -1" (click)= "canclefavoriteVideo(video.video._id)"><i class="fas fa-heart-broken"></i></button>
+                </li>
+              </div>
+
+              <div class="description">
+                <li>
+                  <span class="detail-header">Description:  </span>
+                  <span class="detail-value demi">{{video.video.Description}}</span>
+                </li>
+              </div>
+
+              <div class="likeandcancel">
+                <li>
+                  <span class="detail-header"><i class="fas fa-thumbs-up"></i> Upvote Count:  </span>
+                  <span class="detail-value demi">{{video.video.like}}</span>
+                  
+    
+                      <!-- like -->
+                      <div class="dropdown">
+        
+                      <!-- 如果是此user创建的video 那么 只能看到点赞数 不能点赞 即 不能给自己点赞。。。 -->
+                      <div *ngIf="userid === video.video.creater">
+                        <strong>Likes: </strong>{{ video.video.like }}
+                      </div>
+                      <!-- 如果不是这个user创建的视频 可以点赞 只能点赞一次-->
+                      <button [disabled]="video.video.likedBy.indexOf(userid) > -1" type="button" name="button" class="btn btn-sm btn-success" 
+                      *ngIf="userid !== video.video.creater" (click)="likeVideo(video.video._id)"><span class="glyphicon glyphicon-thumbs-up">
+                      &nbsp;</span>Likes: {{ video.video.like }}
+                      </button>
+                      <div class="dropdown-content">
+                          <a *ngFor="let liker of likelist">{{ liker.fullName }}</a>
+                        </div>
+        
+        
+                      </div>
+        
+                       <!-- Dislike Button -->
+                      <button type="button" name="button" class="btn btn-sm btn-warning" 
+                        *ngIf="video.video.likedBy.indexOf(userid) > -1" (click)="dislikeVideo(video.video._id)"><span class="glyphicon glyphicon-thumbs-down">&nbsp;</span>Dislike</button>
+                </li>
+            </div>
+
+            <div class="followandcancel">
+                <li>
+                    <span class="detail-header"><i class="fas fa-thumbs-up"></i> Creater:  </span>
+                    <span class="detail-value demi">{{coach.user.fullName}}</span>
+
+                   
+
+                        <!-- follow -->
+                        <button  class="btn btn-sm btn-success" [disabled]="userDetails.following.indexOf(video.video.creater) > -1"   (click)= "following(video.video.creater)">follow</button>
+          
+          
+                        <!-- cancle follow -->
+                        <button  class="btn btn-sm btn-warning"  *ngIf="userDetails.following.indexOf(video.video.creater) > -1"  (click)= "unfollowing(video.video.creater)">cancel follow</button>
+                       
+                     
+                   
+                  </li>
+
+                </div>
+                
+              </ul>
+            
+
+
+              <div class="core-focus">
+                <i class="icon -focus-upper_body" aria-hidden="true"></i>
+                <div class="heading">
+                  <span class="focus-label" id="datecreated">Created date: </span>
+                  <span class="focus demi" id="date2created">{{video.video.creatdate}}</span>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+
+
+
+
+          </div>
+
+
+
+        </div>
+        <div id="video-actions" class="video-actions"></div>
+
+
+      </div>
+
+    </div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+  
+    <div class="feed">
+  <h2 class="heading -x-small caps-half demi details">Video Feed</h2>
+</div>
+  <!-- Post Comment Box: Start -->
+  <ul class="list-group">
+      <li class="list-group-item">
+        <!-- Post Comment Button -->
+        <button type="button" name="button" class="btn btn-sm btn-danger" (click)="draftComment(videoid)" [disabled]="newComment.indexOf(videoid) > -1">Post Comment</button>
+        <br />
+        <br />
+
+        <div *ngIf="newComment.indexOf(videoid) > -1">
+
+          <!-- Form: Comment Form Start -->
+          <form [formGroup]="commentForm">
+            <!-- Textarea Input -->
+            <textarea name="comment" rows="10" cols="30" class="form-control" formControlName="comment"></textarea>
+            <!-- Validation -->
+            <div [ngClass]="{'has-success': !commentForm.controls.comment.errors && commentForm.controls.comment.dirty, 'has-error': commentForm.controls.comment.dirty && commentForm.controls.comment.errors}">
+              <ul class="help-block">
+                <li *ngIf="commentForm.controls.comment.errors?.required && commentForm.controls.comment.dirty">This field is required.</li>
+                <li *ngIf="(commentForm.controls.comment.errors?.maxlength && commentForm.controls.comment.dirty) ||(commentForm.controls.comment.errors?.minlength && commentForm.controls.comment.dirty)">Comment must be at least 1 character but no more than 50.</li>
+              </ul>
+            </div>
+            <!-- Post Button -->
+            <button id="postbtn" [disabled]="!commentForm.valid || processing" type="submit" name="button" class="btn btn-sm btn-info" (click)="postComment(videoid)">Post</button>
+            <!-- Cancel Button -->
+            <button id="cancelbtn" [disabled]="processing" type="button" name="button" class="btn btn-sm btn-danger" (click)="cancelSubmission(videoid)">Cancel</button>
+          </form>
+          <!-- Form: Comment Form End -->
+
+        </div>
+
+        <!-- Show Comments -->
+        <!-- <li *ngIf="enabledComments.indexOf(videoid) === -1 " class="list-group-item">
+          <span (click)="expand(videoid)">
+            Show comments&nbsp;&nbsp;
+            <div class="glyphicon glyphicon-comment"></div>
+          </span>
+        </li> -->
+
+        <!-- Hide Comments -->
+        <!-- <li *ngIf="enabledComments.indexOf(videoid) > -1" class="list-group-item">
+          <span (click)="collapse(videoid)">
+            Hide Comments&nbsp;&nbsp;
+            <div class="glyphicon glyphicon-comment"></div>
+          </span>
+        </li> -->
+
+        <!-- Comment -->
+        <!-- <div class ="commenttable" *ngIf="enabledComments.indexOf(videoid) > -1">
+          <li *ngFor="let comment of video.video.comments"  class="list-group-item">
+            <strong>{{ comment.commentor }}:&nbsp;&nbsp;</strong> {{ comment.comment }}
+          </li>
+        </div> -->
+          
+          <div class ="commenttable" >
+            <table class ="comments" >
+                <tr>
+                    <th>User</th>
+                    
+                  </tr>
+                <tr *ngFor="let user of comments">
+             <td>{{user.fullName}} :</td>  
+                </tr>
+              </table>
+              <table class ="username" > 
+                  <tr>
+                      <!-- <th>User</th> -->
+                      <th>Comment</th>
+                      <th>Reply</th>
+                    </tr>
+                  <tr  *ngFor="let comment of finalComments">
+                    <!-- <td>{{comment.commentor}}</td> -->
+                    <td>{{ comment.comment }} </td>
+                    <td>{{ comment.reply }}</td>
+                  </tr>
+              </table>
+            </div>
+        
+
+            
+    </ul>
+    <!-- Post Comment Box: End -->
+  </div>
+
+  

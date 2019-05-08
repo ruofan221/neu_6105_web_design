@@ -1,0 +1,36 @@
+<app-user-nav></app-user-nav>
+
+
+<div class="workoutVideoMaxContainer">
+    <h1>Videos of {{coach.user.fullName}} </h1>
+</div>
+
+<div class="container" >
+    <div class="row align-items-start" >
+      <div class="col" *ngFor = "let video of coachvideos">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" [src]="video.coverurl" alt="Card image cap">
+
+
+              <div class="card-body">
+                <h5 class="card-title">{{video.Name}}</h5>
+                <p class="card-text">{{video.Description}}</p>
+              </div>
+
+
+              <ul class="list-group list-group-flush">
+                 <li class="list-group-item"> 
+                   <a href="/uservideodetails" [routerLink]="['/uservideodetails',video._id]" class="card-link">Watch Video</a>
+                  </li>
+                   
+              
+              </ul>
+             
+
+
+
+
+            </div>
+      </div>
+    </div>
+      </div>

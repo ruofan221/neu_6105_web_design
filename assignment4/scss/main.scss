@@ -1,0 +1,25 @@
+@import "variables";
+@import "nav";
+@import "content";
+@import "footer";
+@import "header";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  Calibri;
+}
+
+.container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns:1250px; 
+    grid-template-rows: 100px auto 200px;
+}
+
+::selection {
+    color: #2c3e50;
+    background: #16a085;
+  }

@@ -1,0 +1,78 @@
+<app-user-nav></app-user-nav>
+
+<div class="workoutVideoMaxContainer">
+<h1>Free Workout Videos</h1>
+</div>
+
+
+<div class="container">
+
+  <div class="row align-items-start" >
+
+    <div class="col" *ngFor = "let video of videos">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" [src]="video.coverurl" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{video.Name}}</h5>
+              <p class="card-text">{{video.Description}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+
+
+
+                <li class="list-group-item">
+                    <a href="/uservideodetails" [routerLink]="['/uservideodetails',video._id]"  class="card-link">Watch Video</a>
+                
+                </li>
+
+
+              <li class="list-group-item">
+                  <div class = "favorite">
+
+                      <!-- favorite -->
+                      <button  class="btn btn-sm btn-success" [disabled]="video.user.indexOf(userid) > -1" (click)= "favoriteVideo(video._id)"><i class="far fa-heart"></i>  Favorite</button>
+        
+                      <!-- cancle favorite -->
+                      <button  class="btn btn-sm btn-warning" id="cancelfavorite" *ngIf="video.user.indexOf(userid) > -1" (click)= "canclefavoriteVideo(video._id)"><i class="fas fa-heart-broken"></i></button>
+        
+                    </div>
+              </li>
+
+
+          <li class="list-group-item">  
+              <div class = "likeVideo">
+                  <!-- like -->
+                 
+                  <!-- 如果是此user创建的video 那么 只能看到点赞数 不能点赞 即 不能给自己点赞。。。 -->
+                  <div *ngIf="userid === video.creater">
+                    <strong>Likes: </strong>{{ video.like }}
+                  </div>
+                  <!-- 如果不是这个user创建的视频 可以点赞 只能点赞一次-->
+                  <button [disabled]="video.likedBy.indexOf(userid) > -1" type="button" name="button" class="btn btn-sm btn-success" 
+                  *ngIf="userid !== video.creater" (click)="likeVideo(video._id)"><span class="glyphicon glyphicon-thumbs-up">
+                  &nbsp;</span><i class="fas fa-thumbs-up"></i>  Likes: {{ video.like }}
+                  </button>
+                  <!-- <div class="dropdown-content">
+                      <a *ngFor="let liker of video.likedBy">{{ liker }}</a>
+                    </div> -->
+                  
+                   <!-- Dislike Button -->
+                  <button type="button" name="button" class="btn btn-sm btn-warning" 
+                    *ngIf="video.likedBy.indexOf(userid) > -1" (click)="dislikeVideo(video._id)"><span class="glyphicon glyphicon-thumbs-down">&nbsp;</span><i class="fas fa-thumbs-down"></i></button>
+                  </div>
+          </li>
+          <!-- <li class="list-group-item">            
+            <div class="fb-like" data-href="transform(video.url)" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+            </li> -->
+            </ul>
+          
+          </div>
+    </div>
+
+  </div>
+
+
+  
+    </div>
+
+ 

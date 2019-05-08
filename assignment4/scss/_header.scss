@@ -1,0 +1,134 @@
+$text_color: white;
+$new_background: black;
+$protal_background:red;
+$bordercolor: rgb(228, 227, 227);
+@import "nav";
+.header {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    padding-left: 5%;
+}
+
+.header_wrapper {
+    display: grid;
+    grid-template-columns:25% 85%;
+    grid-template-rows: 40% 60%; 
+    padding-top: 10px;
+    border-bottom: $bordercolor solid 2px;
+}
+
+.name {
+    padding-right: 35px;
+    grid-row: 1 / span3;
+    border-right: rgb(228, 227, 227) solid 2px;
+    .the_canlender {
+        .the {
+            width: 20%;
+            float: left;
+            background-color:$new_background;
+            letter-spacing: 10px;
+            font {
+                color: $text_color;
+            }
+        }
+        .canlender {
+            width: 80%;
+            float: left;
+            background-color: $protal_background;
+            font {
+                float: right;
+                color: $text_color;
+            }
+            padding-right:3%;
+        }
+    }
+    .news {
+        height: 80%;
+        float: left;
+        font-size: 328%;
+        color: $protal_background;
+        span {
+            color: $new_background;
+        }
+    }
+}
+
+.app {
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+    padding-left:60%;
+    padding-top: 15px;
+    border-bottom: $bordercolor solid 2px;
+    
+    .app_name{
+        border-right:solid black 1px;
+        float: left;
+        font-size: 50%;
+        text-align: center;
+        letter-spacing: 1px;
+        padding-left: 3px;
+    }
+    .facebook {
+        color: dodgerblue;
+        width: 20%;
+        @extend.app_name;
+        
+    }
+    .youtube {
+        color: red;
+        width:20%;
+        @extend.app_name;
+    }
+    
+    .instagram {
+        color: rgb(146, 74, 146);
+        width: 20%;
+        @extend.app_name;
+        border-right: none;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        background: pink;
+    }
+}
+
+.nav_search{
+    border-bottom:$bordercolor  solid 2px;
+    grid-row: 2 / 3;
+    grid-column: 2 / -1;
+    
+}
+
+.nav {
+    height: 100%;
+    width: 60%;
+    float: left;
+    border-right: 1px solid $bordercolor;
+}
+.search {
+    width: 25%;
+    float: left;
+    height: 100%;
+    input {
+        height: 100%;
+        border: none;
+        font-size: 130%;
+    
+    }
+    input:focus{
+        background: rgb(221, 218, 220);
+    }
+}
+.search-btn {
+    color:black;
+    float:right;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

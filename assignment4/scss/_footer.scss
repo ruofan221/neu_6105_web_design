@@ -1,0 +1,91 @@
+
+.footer {
+    grid-column: 1/-1;
+   border: black solid 1px;
+  
+}
+
+@mixin footerlayout($bkcolor) {
+    float: left;
+    width: 100%;
+    background: $bkcolor;
+   }
+
+.service {
+    @include footerlayout(rgb(49, 47, 47));
+    nav {
+    
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+        }
+        a{
+            display: inline-block;
+            padding: 15px;
+            text-decoration: none;
+            color:white;
+            
+        }
+        a:hover {
+            background: pink;
+        }
+    }
+    
+    height: 70px;
+    text-align: center;
+    padding-top: 10px; 
+    a {
+        color: white;
+        font-size: 80%;
+    }
+        
+}
+
+.copyright {
+     @include footerlayout( rgb(68, 64, 64));
+     height: 130px;
+     text-align: center;
+     padding-top: 20px;
+     p {
+         font-size: 65%;
+         color: white;
+     }
+}
+
+/*
+using map
+*/
+
+$footerimage: (
+    cnbc : url(./Images/Footer/cnbc-hdr-logo2.png),
+    nbc : url(./Images/Footer/nbcnes.jpg),
+    msnbc : url(./Images/Footer/msnbc-logo-white.png),
+    xfinity: url(./Images/Footer/Xfinity_logo_black.png)
+);
+
+@each $footerimage, $url in $footerimage {
+    .cnbc-div {
+        margin-left: 50px; 
+        width :200px;
+        height: 30px;
+        float: left;
+    }
+    .#{$footerimage} {
+            background-image: $url;
+            background-size: contain;
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            display: inline-block;
+    }
+}
+
+.footer-div {
+    padding-top: 15px;
+    padding-left: 150px;
+    
+}

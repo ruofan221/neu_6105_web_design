@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="th=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>assignment3</title>
+</head>
+
+<body>
+        <form>
+    <!-- The first container -->
+    <div class="container">
+        <!---first row,u sing several div to seperate the row---->
+        <div class="row1">
+            <div class="form">
+                Form
+            </div>
+            <!---1st cell--->
+            <div class="r1c1">
+                <b>1040</b>
+            </div>
+            <!---2ed cell--->
+            <div class="r1c2">
+                <p class="p1">Department of the Treasury-Internal Revenue
+                    Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(99)</p>
+                <p class="p2"><b>U.S. Individual Income Tax Return</b></p>
+            </div>
+            <!---3rd cell--->
+            <div class="r1c3">
+                <b>2018</b>
+            </div>
+            <!---4th cell--->
+            <div class="r1c4">
+                OMB No. 1545-0074
+            </div>
+            <!---5th cell--->
+            <div class="r1c5">
+                IRS Use Only-Do not write or staple in this space.
+            </div>
+        </div>
+        <!---2nd row--->
+        <div class="row2">
+            <div class="r2c1">
+                <b>Filling status: &nbsp;&nbsp;</b>
+                <input type="radio" name="test" class="input"> Single &nbsp;&nbsp;
+                <input type="radio" name="test" class="input"> Married filing
+                jointly&nbsp;&nbsp;
+                <input type="radio" name="test" class="input"> Married filing
+                separately&nbsp;&nbsp;
+                <input type="radio" name="test" class="input"> Head of household
+                &nbsp;&nbsp;
+                <input type="radio" name="test" class="input"> Qualifying widow(er)
+            </div>
+
+            <div class="r2c2">
+                <input type="text" name="row2.text" class="r2c2_input">
+            </div>
+        </div>
+
+        <!---3rd row--->
+        <div class="row3">
+            <!---1st cell--->
+            <div class="r3c1">
+                Your first name and initail
+            </div>
+            <!---2nd cell--->
+            <div class="r3c2">
+                Last Name
+            </div>
+            <!---3rd cell--->
+            <div class="r3c3">
+                <b>Your social security number</b>
+            </div>
+        </div>
+
+        <!---4th row--->
+        <div class="row4">
+
+            <!---1st cell--->
+            <div class="r4c1">
+                <input type="text" name="firstname" required class="r4c1c2_input">
+            </div>
+            <!---2nd cell--->
+            <div class="r4c2">
+                <!---text field validation, user must input their name-->
+                <input type="text" name="Lastname" required class="r4c1c2_input">
+            </div>
+
+            <!---3rd cell--->
+            <div class="r4c3">
+                <!--security number validation-->
+                <input type="text" name="SNM" maxlength="9" class="r4c3_input" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+            </div>
+        </div>
+
+        <!---5th row--->
+        <div class="row5">
+
+            Your standard deduction:
+            &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="yoursdeduction"> Someone can claim you as a dependent
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="yoursdeduction"> You were born before January 2,
+            1954&nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="yoursdeduction"> You are blind&nbsp; &nbsp; &nbsp; &nbsp;
+        </div>
+
+        <!---6th row --->
+        <div class="row6">
+            <!---1st cell--->
+            <div class="r3c1">
+                If joint return, spouse's first name and initial
+            </div>
+            <!---2nd cell--->
+            <div class="r3c2">
+                &nbsp;Last Name
+            </div>
+            <!---3rd cell--->
+            <div class="r3c3">
+                <b>Spouse’s social security number</b>
+            </div>
+        </div>
+
+        <!---7th row--->
+        <div class="row7">
+            <!---1st cell--->
+            <div class="r4c1">
+                <input type="text" name="sopuseFirstname" required class="r4c1c2_input">
+            </div>
+            <!---2nd cell--->
+            <div class="r4c2">
+                <!---text field validation, user must input their name-->
+                <input type="text" name="SpousLastname" required class="r4c1c2_input">
+            </div>
+
+            <!---3rd cell--->
+            <div class="r4c3">
+                <!--security number validation-->
+                <input type="text" name="SNM" maxlength="9" required class="r4c3_input"  onKeyUp="value=value.replace(/[^\d]/g,'') "
+                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+            </div>
+        </div>
+
+        <!---8th row  spouse standard deduction--->
+        <div class="row8">
+            <!---1st cell--->
+            <div class="r8c1">
+                <b>Spouse standard deduction: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                <!--checkbox validation, user can only choose one box-->
+                <input type="radio" name="spouse's test"> Someone can claim your
+                spouse as a dependent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="spouse's test"> Your spouse were born
+                before January 2, 1954&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="spouse's test"> Spouse is
+                blind&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="spouse's test"> Spouse itemizes on a
+                separate return or you were dual-status alien&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <!---2nd cell--->
+            <div class="r8c2">
+                <input type="checkbox" name="Full-year">
+                Full-year health care coverage or exempt(see inst.)
+            </div>
+        </div>
+
+        <!---9th row Home address--->
+        <div class="row9">
+            <!---1st cell--->
+            <div class="r9c1">Home
+                address(number and street). If you have a P.O. box, see instructions.
+            </div>
+
+            <!---2nd cell--->
+            <div class="r9c2">
+                Apt. no.
+            </div>
+            <!---3rd cell--->
+            <div class="r9c3">
+                <b>Election Campaign</b>(see inst.)
+            </div>
+        </div>
+
+        <!---10th row--->
+        <div class="row10">
+            <!---text field validation, user must input their address-->
+            <!---1st cell--->
+            <div class="r10c1">
+                <input type="text" name="homeaddress" class="r10c1_input" required>
+            </div>
+            <!---2nd cell--->
+            <div class="r10c2">
+                <input type="text" name="apt.no." class="r10c2_input" required>
+            </div>
+            <!---3rd cell--->
+            <div class="r10c3">
+                &nbsp; &nbsp;
+                <input type="radio" name="Presidential"> <b>You</b>
+                &nbsp; &nbsp;
+                <input type="radio" name="Presidential"> <b>Spouse</b>
+            </div>
+        </div>
+
+        <!-- 11th row--->
+        <div class="row11">
+            <!-- 1st cell--->
+            <div class="r11c1">City, town or post office, state, and ZIP code. If you have a
+                foreign address, attach Schedule 6.
+            </div>
+
+            <!-- 2st cell--->
+            <div class="r11c2">
+                if more than four dependents, see inst.
+            </div>
+        </div>
+
+        <!---12th row--->
+        <div class="row10">
+            <!-- 1st cell--->
+            <!---text field validation, user must input their address-->
+            <div class="r12c1">
+                <input type="text" name="City" class="r12c1_input" required>
+            </div>
+
+            <!-- 2st cell--->
+            <div class="r12c2">
+                &radic;and here ▶ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="four dependents">
+            </div>
+        </div>
+
+        <!---13th row  Dependents--->
+        <div class="row13">
+            <!-- 1st cell--->
+            <div class="r13c1">
+                <b>Depedents</b> (see instructions):
+            </div>
+
+            <!-- 2nd cell--->
+            <div class="r13c2">
+                <b>(2)</b> Social security number
+            </div>
+
+            <!-- 3rd cell--->
+            <div class="r13c3">
+                <b>(3)</b> Relationship to you
+            </div>
+
+            <!-- 4st cell--->
+            <div class="r13c4">
+                <b>(4) &radic;</b> if qualifies for(see inst.):
+            </div>
+        </div>
+
+        <!---14th row--->
+        <div class="row14">
+            <!-- 1st cell--->
+            <div class="r13c1">
+                <div class="r13c1_r1">
+                    <b>(1)</b> First name
+                </div>
+                <div class="r13c1_r1">
+                    Last name
+                </div>
+            </div>
+
+            <!-- 2nd cell--->
+            <div class="r13c2">
+            </div>
+            <!-- 3rd cell--->
+            <div class="r13c3">
+            </div>
+            <!-- 4st cell--->
+            <div class="r13c4">
+                <div class="r14c4_r1">
+                    Child tax credit
+                </div>
+                <div class="r14c4_r2">
+                    Credit for other dependents
+                </div>
+            </div>
+        </div>
+
+        <!---15th row--->
+        <div class="row14">
+            <!-- 1st cell--->
+            <div class="r15c1">
+                <!--text feild validation validation-->
+                <input type="text" name="textfeild1" class="r15c1_input" required>
+
+            </div>
+
+            <!-- 2nd cell--->
+            <div class="r15c2">
+                <!--Social security number validation validation-->
+                <input type="text" name="textfeild2" class="r15c2_input" required; maxlength="9" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+            </div>
+
+            <!-- 3rd cell--->
+            <div class="r15c2">
+                <!--text feild validation validation-->
+                <input type="text" name="textfeild3" class="r15c2_input" required;>
+            </div>
+
+            <!-- 4st cell--->
+            <div class="r15c4">
+                <div class="r15c4_1">
+
+                    <input type="radio" name="selectfeild" class="r15c4_input" required>
+                </div>
+                <div class="r15c4_2">
+                    <input type="radio" name="selectfeild" class="r15c4_input" required>
+                </div>
+            </div>
+        </div>
+
+        <!---15th row--->
+        <div class="row14">
+            <!-- 1st cell--->
+            <div class="r15c1">
+                <!--text feild validation validation-->
+                <input type="text" name="textfeild4" class="r15c1_input" required>
+
+            </div>
+
+            <!-- 2nd cell--->
+            <div class="r15c2">
+                <!--Social security number validation validation-->
+                <input type="text" name="textfeild5" class="r15c2_input" required; maxlength="9" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+            </div>
+
+            <!-- 3rd cell--->
+            <div class="r15c2">
+                <!--text feild validation validation-->
+                <input type="text" name="textfeild6" class="r15c2_input" required;>
+            </div>
+
+            <!-- 4st cell--->
+            <div class="r15c4">
+                <div class="r15c4_1">
+
+                    <input type="radio" name="selectfeild1" class="r15c4_input">
+                </div>
+                <div class="r15c4_2">
+                    <input type="radio" name="selectfeild1" class="r15c4_input">
+                </div>
+            </div>
+        </div>
+
+        <!---17th row--->
+        <div class="row14">
+            <!-- 1st cell--->
+            <div class="r15c1">
+                <!--text feild validation validation-->
+                <input type="text" name="textfeild7" class="r15c1_input" required>
+
+            </div>
+
+            <!-- 2nd cell--->
+            <div class="r15c2">
+                <!--Social security number validation validation-->
+                <input type="text" name="textfeild8" class="r15c2_input" required; maxlength="9" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+            </div>
+
+            <!-- 3rd cell--->
+            <div class="r15c2">
+                <!--text feild validation validation-->
+                <input type="text" name="textfeild9" class="r15c2_input" required;>
+            </div>
+
+            <!-- 4st cell--->
+            <div class="r15c4">
+                <div class="r15c4_1">
+
+                    <input type="radio" name="selectfeild2" class="r15c4_input">
+                </div>
+                <div class="r15c4_2">
+                    <input type="radio" name="selectfeild2" class="r15c4_input">
+                </div>
+            </div>
+        </div>
+
+        <!---18th row--->
+        <div class="row14">
+            <!-- 1st cell--->
+            <div class="r15c1">
+                <!--text feild validation validation-->
+                <input type="text" name="textfeild10" class="r15c1_input" required>
+
+            </div>
+
+            <!-- 2nd cell--->
+            <div class="r15c2">
+                <!--Social security number validation validation-->
+                <input type="text" name="textfeild11" class="r15c2_input" required; maxlength="9" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+            </div>
+
+            <!-- 3rd cell--->
+            <div class="r15c2">
+                <!--text feild validation validation-->
+                <input type="text" name="textfeild12" class="r15c2_input" required;>
+            </div>
+
+            <!-- 4st cell--->
+            <div class="r15c4">
+                <div class="r15c4_1">
+
+                    <input type="radio" name="selectfeild3" class="r15c4_input">
+                </div>
+                <div class="r15c4_2">
+                    <input type="radio" name="selectfeild3" class="r15c4_input">
+                </div>
+            </div>
+        </div>
+
+        <!--- Sign Here 18th row--->
+        <div class="row_sign">
+            <!---the 1st coulum-->
+            <div class="row_sign_c1">
+                <div class="row_sign_c1_div1">
+                     <b>Sign</b>
+                </div>
+                <div>
+                     <b>here</b>
+                </div>
+
+                <div class="row_sign_c3 ">
+                    Joint return? See instructions. Keep a copy for
+                    your records.
+                </div>
+            </div>
+
+            <!---the 2nd coulum-->
+            <div class=".row_sign_c2">
+                <!--the 1st row-->
+                <div class="row_sign_c2r1">
+                    Under penalties of perjury, I declare that I have examined this return and accompanying schedules
+                    and statements,
+                    and to the best of my knowledge and belief, they are true, correct, and complete. Declaration of
+                    preparer (other
+                    than taxpayer) is based on all information of which preparer has any knowledge.
+                </div>
+
+                <div class="triangleandrest">
+                    <!-- triangle -->
+                    <div class="triangle ">
+
+                    </div>
+                    <div class="rest">
+                        <!--the 2nd row-->
+                        <div class="row_sign_c2r2 ">
+
+                            <div class="row_sign_c2r2_div1">
+                                Your signature
+                            </div>
+
+                            <div class="row_sign_c2r2_div2 ">
+                                Date
+                                <br>
+                                <input type="date" required name="date1" class="row_sign_c2r2_div2_input">
+                            </div>
+
+                            <div class="row_sign_c2r2_div3">
+                                <div class="row_sign_c2r2_div3_div1">
+                                    Your occupation
+                                </div>
+                                <div>
+                                    <input type="text" name="Youroccupation">
+                                </div>
+
+                            </div>
+
+                            <div class="row_sign_c2r2_div4">
+                                If the IRS sent you an Identity Protection PIN, enter it here (see inst.)
+                                <input type="text" name="IRS1" maxlength="1" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input type="text" name="IRS2" maxlength="1" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input type="text" name="IRS3" maxlength="1" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input type="text" name="IRS4" maxlength="1" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input type="text" name="IRS5" maxlength="1" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input type="text" name="IRS6" maxlength="1" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                            </div>
+                        </div>
+
+                        <!--the 3rd row-->
+                        <div class="row_sign_c2r3">
+                            <div class="row_sign_c2r3_div1">
+                                Spouse's signature. If a joint return, both must sign
+
+                            </div>
+
+                            <div class="row_sign_c2r3_div2">
+                                Date
+                                <br>
+                                <input type="date" required name="date2" class="row_sign_c2r2_div2_input">
+                            </div>
+
+
+                            <div class="row_sign_c2r3_div3">
+                                <div class="row_sign_c2r3_div3_div1">
+                                    Spouse's occupation
+                                </div>
+
+                                <div>
+                                    <input type="text" name="Spouse'soccupation" required>
+                                </div>
+                            </div>
+
+                            <div class="row_sign_c2r3_div4">
+                                If the IRS sent you an Identity Protection PIN, enter it here (see inst.)
+                                <input type="text" name="IRS1_1" maxlength="1" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" name="IRS2_2" maxlength="1" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" name="IRS3_3" maxlength="1" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" name="IRS4_4" maxlength="1" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" name="IRS5_5" maxlength="1" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" name="IRS6_6" maxlength="1" ; onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!---Paid Preparer Use Only 19th row--->
+            <div class="row19">
+                <!---the 1st coulum-->
+                <div class="r19c1">
+                    <b>Paid Preparer Use Only</b>
+                </div>
+
+                <!---the 2nd coulum-->
+                <div class="r19c2">
+                    <!--the 1st row(preparer's name/Firm's name)/check-->
+                    <div class="r19c2_row1">
+                        <!---Preparer's name/Firm's name -->
+                        <div class="r19c2_row1c1">
+                            <!--Preparer's name /text-->
+                            <div class="row_nameandtext">
+                                <!--Preparer's name the 1st row-->
+                                <div class="row_name">
+                                    <!--Preparer's name-->
+                                    <div class="row_name_div1">
+                                        Preparer's name
+                                    </div>
+
+                                    <!--Preparer's signature-->
+                                    <div class="row_name_div2">
+                                        Preparer's signature
+                                    </div>
+
+                                    <!--PTIN the -->
+                                    <div class="row_name_div3">
+                                        PTIN
+                                    </div>
+                                    <!--Firm's EIN-->
+                                    <div class="row_name_div4">
+                                        Firm's EIN
+                                    </div>
+                                </div>
+
+                                <!--Preparer's name text-->
+                                <div class="row_nametext">
+                                    <!--Preparer's name the 1st row-->
+                                    <div class="row_nametext_div1">
+                                        <input type="text" name="preparer'sopuseFirstname">
+                                    </div>
+
+                                    <!--Preparer's signature-->
+                                    <div class="row_nametext_div2">
+
+                                    </div>
+
+                                    <!--PTIN the -->
+                                    <div class="row_nametext_div3">
+                                        <input type="text" name="ptin">
+                                    </div>
+                                    <!--Firm's EIN-->
+                                    <div class="row_nametext_div4">
+                                        <input type="text" name="EIN">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Firm's name the 2nd row-->
+                            <div class="row_firmname ">
+
+                                <!--Firm's name the 1st colum-->
+                                <div class="row_firmname_div1">
+                                    Firm's name ▶
+                                    <input type="text" name="firmname" required>
+                                </div>
+
+                                <!--Phone no. the 2nd colum-->
+                                <div class="row_firmname_div2">
+                                    Phone no.
+                                    <input type="text" name="phoneno" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"  maxlength="11" required pattern="[0-9]">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!---Check if: the 2nd coulum-->
+                        <div class="row_check">
+                            <p><b>Check if:</b></p>
+                            <input type="radio" name="Checkif"> 3rd Party Designee
+                            <br>
+                            <input type="radio" name="Checkif"> Self-employed
+                        </div>
+
+                    </div>
+
+                    <!--Firm's addresss the 2nd row-->
+                    <div class="row_address">
+                        Firm's address ▶
+                        <input type="text" name="Firm's address" required>
+                    </div>
+
+                </div>
+            </div>
+            <!---Paid Preparer Use Only 20th row--->
+            <div class="row20">
+                <div class="row20_div1">
+                    <b>For Disclosure, Privacy Act, and Paperwork Reduction Act Notice,
+                        see separate instructions.
+                    </b>
+                </div>
+
+                <div class="row20_div2">Cat. No. 11320B
+
+                </div>
+
+                <div class="row20_div3">
+                    
+                    <b>1040</b>
+                    
+                </div>
+            </div>
+        </div>
+    </div><!-- the first container end -->
+
+    <hr class="hr">
+
+    <!----2nd page--->
+    <!-- head -->
+    <div class="page2">
+        <div class="head1">
+            Form 1040(2018)
+        </div>
+        <div class="head2">
+            Page<b>2</b>
+        </div>
+    </div><!-- head close -->
+
+    <!--first div-->
+    <div class="firstdiv">
+        <!--Attach From(s)-->
+        <div class="attachform">
+            <!---1st colum Standard deduction---->
+            <div class="colum1">
+                <div class="c1_div1">
+                    Attach Form(s) W-2. Also attach Form(s) W-2G and 1099-R if tax
+                </div>
+                <div class="c1_div2">
+                    <b>Standard Deduction for ———></b>
+                    <ul>
+                        <li>Single or married filing separately,$12,000 </li>
+                        <li>Married filingjointly or Qualifying widow(er),$24,000 </li>
+                        <li>Head of household, $18,000
+                        </li>
+                        <li> If you checked any box under Standard deduction, see instructions
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!---2nd colum ---->
+            <div class="colum2">
+                <!-- 1row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>1</b>
+                        </div>
+                        <div class=".c2r1_2">
+                            Wages, salaries, tips, etc. Attach Form(s) W-2
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>1</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="1_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="1_2">
+                        </div>
+                    </div>
+                </div>
+                <!-- 2row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>2a</b>
+                        </div>
+                        <div class="c3r2_2">
+                            Tax-exempt interest
+                        </div>
+                        <div class="c3r2_3">
+                            <div class="c3r2_3_div1">
+                                <b>2a</b>
+                            </div>
+                            <div class="c3r2_3_div2">
+                                <input type="text" name="2a_1">
+                            </div>
+                            <div class="c3r2_3_div3">
+                                <input type="text" name="2a_2">
+                            </div>
+                        </div>
+                        <div class="c3r2_4">
+                            <b>b </b>Taxable interest
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>2b</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="2_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="2_2">
+                        </div>
+                    </div>
+                </div>
+                <!-- 3row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>3a</b>
+                        </div>
+                        <div class="c3r2_2">
+                            Qualified dividends
+                        </div>
+                        <div class="c3r2_3">
+                            <div class="c3r2_3_div1">
+                                <b>3a</b>
+                            </div>
+                            <div class="c3r2_3_div2">
+                                <input type="text" name="3a_1">
+                            </div>
+                            <div class="c3r2_3_div3">
+                                <input type="text" name="3a_2">
+                            </div>
+                        </div>
+                        <div class="c3r2_4">
+                            <b>b </b>TQualified dividends
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>3b</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="3b_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="3b_2">
+                        </div>
+                    </div>
+                </div>
+                <!-- 4row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>4a</b>
+                        </div>
+                        <div class="c3r2_2">
+                            IRAs, pensions, and annuities .
+                        </div>
+                        <div class="c3r2_3">
+                            <div class="c3r2_3_div1">
+                                <b>4a</b>
+                            </div>
+                            <div class="c3r2_3_div2">
+                                <input type="text" name="4a_1">
+                            </div>
+                            <div class="c3r2_3_div3">
+                                <input type="text" name="4a_2">
+                            </div>
+                        </div>
+                        <div class="c3r2_4">
+                            <b>b </b>Taxable amount
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>4b</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="4b_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="4b_2">
+                        </div>
+                    </div>
+                </div>
+                <!-- 5row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>5a</b>
+                        </div>
+                        <div class="c3r2_2">
+                            Social security benefits
+                        </div>
+                        <div class="c3r2_3">
+                            <div class="c3r2_3_div1">
+                                <b>5a</b>
+                            </div>
+                            <div class="c3r2_3_div2">
+                                <input type="text" name="5a_1">
+                            </div>
+                            <div class="c3r2_3_div3">
+                                <input type="text" name="5a_2">
+                            </div>
+                        </div>
+                        <div class="c3r2_4">
+                            <b>b </b>Taxable amount
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>5b</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="5b_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="5b_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>6</b>
+                        </div>
+                        <div class="c2r1_2">
+                            Total income. Add lines 1 through 5. Add any amount from Schedule 1, line 22
+                            <input type="text" name="6" class="row6_input">
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>6</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="6_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="6_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7row -->
+                <div class="row_7th">
+                    <div class="c2r7div1">
+                        <div class="c2r7_1">
+                            <b>7</b>
+                        </div>
+                        <div class="c2r7_2">
+                            Adjusted gross income. If you have no adjustments to income, enter the amount from line 6;
+                            otherwise,
+                            subtract Schedule 1, line 36, from line 6
+                        </div>
+                    </div>
+
+                    <div class="c2r7div2">
+                        <div class="c2r7div2_div1">
+                            <b>7</b>
+                        </div>
+                        <div class="c2r7div2_div2">
+                            <input type="text" name="7_1">
+                        </div>
+                        <div class="c2r7div2_div3">
+                            <input type="text" name="7_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1 c2r8" >
+                            <b>8</b>
+                        </div>
+                        <div class="c2r1_2">
+                            <b>Standard deduction or itemized deductions </b>(from Schedule A)
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>8</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="8_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="8_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>9</b>
+                        </div>
+                        <div class="c2r1_2">
+                            Qualified business income deduction (see instructions) .
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>9</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="9_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="9_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>10</b>
+                        </div>
+                        <div class="c2r1_2">
+                            Taxable income. Subtract lines 8 and 9 from line 7. If zero or less, enter -0-
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>10</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="10_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="10_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>11</b>
+                        </div>
+                        <div class="c2r1_2">
+                            <b>a</b> Tax (see inst.)
+                            <input type="text" name="11>1" class="c2r1_2_input1"
+                                required>
+                            (check if any from:
+                            &nbsp; &nbsp; <b>1</b>
+                            <input type="checkbox" name="8"> From(s) 8814
+
+                            &nbsp; &nbsp; <b>2</b>
+                            <input type="checkbox" name="8"> From(s) 4972
+
+                            &nbsp; &nbsp; <b>3</b>
+                            <input type="checkbox" name="8">
+                            <input type="text" name="11>2" class="c2r1_2_input2"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2 c2r11" >
+                        <div class="c2r1div2_div1">
+                        </div>
+                        <div class="c2r1div2_div2 c2r11_div" >
+                        </div>
+                        <div class="c2r1div2_div3 c2r11_div" >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11_1row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+
+                        </div>
+                        <div class="c2r1_2">
+                            <b>b Add</b> any amount from Schedule 2 and check here.
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+
+                            ▶
+                            <input type="checkbox" name="11_1">
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>11</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="11_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="11_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>12</b>
+                        </div>
+                        <div class="c2r1_2">
+                            <b>a </b>Child tax credit/credit for other dependents
+                            <input type="text" name="7" class="c2r12_input"
+                                required>
+                            <b>b Add</b> any amount Schedule 3 and check here ▶
+                            <input type="checkbox" name="12">
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>12</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="12_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="12_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>13</b>
+                        </div>
+                        <div class="c2r1_2">
+                            Subtract line 12 from line 11. If zero or less, enter -0-
+
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>13</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="13_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="13_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>14</b>
+                        </div>
+                        <div class="c2r1_2">
+                            Other taxes. Attach Schedule 4
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>14</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="14_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="14_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>15</b>
+                        </div>
+                        <div class="c2r1_2">
+                            Total tax. Add lines 13 and 14
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>15</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="15_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="15_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 16row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>16</b>
+                        </div>
+                        <div class="c2r1_2">
+                            Federal income tax withheld from Forms W-2 and 1099
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>16</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="16_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="16_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 17row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>17</b>
+                        </div>
+                        <div class="c2r1_2">
+                            Refundable credits:
+                            <b>a</b> EIC (see inst.)
+                            <input type="text" name="17>1" class="c2r17_input"
+                                required>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>b</b> Sch. 8812
+                            <input type="text" name="17>2" class="c2r17_input"
+                                required>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>c</b> Form 8863
+                            <input type="text" name="17>2" class="c2r17_input"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2 borderbottom_none" >
+                        <div class="c2r1div2_div1">
+                        </div>
+                        <div class="c2r1div2_div2 c2r11_div" >
+                        </div>
+                        <div class="c2r1div2_div3 c2r11_div" >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 17_1row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+
+                        </div>
+                        <div class="c2r1_2">
+                            <b>add</b> any amount from Schedule 5
+                            <input type="text" name="17" class="c2r17_input"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2">
+                        <div class="c2r1div2_div1">
+                            <b>17</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="17_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="17_2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 18row -->
+                <div class="row_1st">
+                    <div class="c2r1div1">
+                        <div class="c2r1_1">
+                            <b>18</b>
+                        </div>
+                        <div class="c2r1_2">
+                            Add lines 16 and 17. These are your total payments
+                        </div>
+                    </div>
+
+                    <div class="c2r1div2 borderbottom_none" >
+                        <div class="c2r1div2_div1">
+                            <b>18</b>
+                        </div>
+                        <div class="c2r1div2_div2">
+                            <input type="text" name="18_1">
+                        </div>
+                        <div class="c2r1div2_div3">
+                            <input type="text" name="18_2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd colum closed -->
+
+
+            <!--Refund-->
+            <div class="refund">
+                <!---1st colum Standard deduction---->
+                <div class="refund_colum1">
+                    <div class="refund_colum1_div1">
+                        <b>Refund</b>
+                    </div>
+                    <div class="refund_colum1_div2">
+                        Direct deposit?
+                        See instructions.
+                    </div>
+                </div>
+
+                <!---2nd colum ---->
+                <div class="refund_colum2">
+                    <!-- 19row -->
+                    <div class="row_1st">
+                        <div class="c2r1div1">
+                            <div class="c2r1_1">
+                                <b>19</b>
+                            </div>
+                            <div class="c2r1_2">
+                                If line 18 is more than line 15, subtract line 15 from line 18. This is the amount you
+                                <b>overpaid</b>
+                            </div>
+                        </div>
+
+                        <div class="c2r1div2">
+                            <div class="c2r1div2_div1">
+                                <b>16</b>
+                            </div>
+                            <div class="c2r1div2_div2">
+                                <input type="text" name="19_1">
+                            </div>
+                            <div class="c2r1div2_div3">
+                                <input type="text" name="19_2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 20row -->
+                    <div class="row_1st">
+                        <div class="c2r1div1">
+                            <div class="c2r1_1">
+                                <b>20a</b>
+                            </div>
+                            <div class="c2r1_2">
+                                Amount of line 19 you want <b>refunded to you. </b>If Form 8888 is attached, check here
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp;&nbsp; &nbsp;▶
+                                <input type="checkbox">
+                            </div>
+                        </div>
+
+                        <div class="c2r1div2">
+                            <div class="c2r1div2_div1">
+                                <b>20a</b>
+                            </div>
+                            <div class="c2r1div2_div2">
+                                <input type="text" name="20_1">
+                            </div>
+                            <div class="c2r1div2_div3">
+                                <input type="text" name="20_2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 21row -->
+                    <div class="row_1st">
+                        <div class="c2r1div1">
+                            <div class="c2r1_1">
+                                <b>▶b</b>
+                            </div>
+                            <div class="c2r1_2">
+                                Routing number
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <b>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;▶ c</b> Type:
+                                <input type="radio" name="routingnum">Checking &nbsp; &nbsp;
+                                <input type="radio" name="routingnum">Saving
+                            </div>
+                        </div>
+
+                        <div class="c2r1div2">
+                            <div class="c2r1div2_div1 background_grey borderright" ;>
+
+                            </div>
+                            <div class="c2r1div2_div2 c2r11_div borderbottom_none borderright" >
+
+                            </div>
+                            <div class="c2r1div2_div3 c2r11_div borderbottom_none" >
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 22row -->
+                    <div class="row_1st">
+                        <div class="c2r1div1">
+                            <div class="c2r1_1">
+                                <b>▶d</b>
+                            </div>
+                            <div class="c2r1_2">
+                                Account number
+                                <input type="text" class="row21_input" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" ;maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" ;maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                                <input type="text" class="row21_input" ;maxlength="1" onKeyUp="value=value.replace(/[^\d]/g,'') "
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="c2r1div2">
+                            <div class="c2r1div2_div1 background_grey borderright" >
+
+                            </div>
+                            <div class="c2r1div2_div2 c2r11_div borderright" >
+
+                            </div>
+                            <div class="c2r1div2_div3 c2r11_div" >
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 23row -->
+                    <div class="row_1st">
+                        <div class="c2r1div1">
+                            <div class="c2r1_1">
+                                <b>21</b>
+                            </div>
+                            <div class="c2r2_2">
+                                <div class="row23_div1">
+                                    Amount of line 19 you want applied to your 2019 estimated tax
+                                    ▶
+                                </div>
+
+                                <div class="row23_div2">
+                                    21
+                                </div>
+
+                                <div class="row23_div3">
+                                    <input type="text" name="21_1" required>
+                                </div>
+
+                                <div class="row23_div4">
+                                    <input type="text" name="21_2" required>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="c2r21div2">
+                            <div class="c2r21div2_div1 background_grey borderright bordertop" ;>
+
+                            </div>
+                            <div class="c2r21div2_div2 c2r11_div borderright" >
+                            </div>
+                            <div class="c2r21div2_div3 c2r11_div bordertop" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Amount you Owe-->
+            <div class="amount">
+                <!---1st colum Standard deduction---->
+                <div class="amount_colum1">
+                    <b>Amount You Owe</b>
+                </div>
+
+                <!---2nd colum ---->
+                <div class="amount_colum2">
+                    <!-- 24row -->
+                    <div class="row_1st">
+                        <div class="c2r1div1">
+                            <div class="c2r1_1">
+                                <b>22</b>
+                            </div>
+                            <div class="c2r1_2">
+                                Amount you owe. Subtract line 18 from line 15. For details on how to pay, see
+                                instructions ▶
+                            </div>
+                        </div>
+
+                        <div class="c2r1div2">
+                            <div class="c2r1div2_div1">
+                                <b>22</b>
+                            </div>
+                            <div class="c2r1div2_div2">
+                                <input type="text" name="22_1">
+                            </div>
+                            <div class="c2r1div2_div3">
+                                <input type="text" name="22_2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 25row -->
+                    <div class="row_1st">
+                        <div class="c2r1div1">
+                            <div class="c2r1_1">
+                                <b>23</b>
+                            </div>
+                            <div class="c2r2_2">
+                                <div class="row23_div1 ">
+                                    Estimated tax penalty (see instructions) ▶
+                                </div>
+
+                                <div class="row23_div2">
+                                    23
+                                </div>
+
+                                <div class="row23_div3">
+                                    <input type="text" name="21_1" required>
+                                </div>
+
+                                <div class="row23_div4">
+                                    <input type="text" name="21_2" required>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="c2r1div2 ">
+                            <div class="c2r1div2_div1 bordertop borderright background_grey height27" >
+
+                            </div>
+                            <div class="c2r1div2_div2 background_grey borderright height27">
+                            </div>
+
+                            <div class="c2r1div2_div3 background_grey bordertop height27" >
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="foot">
+                <div class="foot_div1">
+                    Go to <a href="www.irs.gov/Form1040">www.irs.gov/Form1040</a> for instructions and the latest information.
+                </div>
+                <div class="foot_div2">
+                    <b>1040</b></span>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--first div close-->
+    <div class="button">
+    <button>Submit</button>
+    </div>
+</form>
+</body>
+
+</html>

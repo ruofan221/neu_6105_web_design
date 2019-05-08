@@ -1,0 +1,97 @@
+<app-user-nav></app-user-nav>
+
+
+<!-- the whole form -->
+<div  id="container2">
+    <!-- title -->
+    <div class="page-header">
+            <h3 class="text-center">
+                    Profile Form
+                </h3>
+    </div>
+
+
+    <!-- row -->
+
+        <form #myForm="ngForm" ngForm enctype="multipart/form-data" class="form-horizontal" role="form" (ngSubmit)="update(myForm.value)">
+
+            <div class="form-row">
+            <!-- full name  -->
+              <div class="form-group">
+                    <label for="fullName" class="col-sm-6 control-label">Full Name: </label>
+                            <input  type="text" class="col-sm-10 form-control" [(ngModel)]="fullName" ngModel name="fullName" id="fullName" value={{userDetails.fullName}}
+                                 required="required" /> 
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                    <label for="email" class="col-sm-6 control-label">Email: </label>
+                            <input type="text" class="col-sm-10 form-control" [pattern]="emailRegex" id="email" ngModel name="email" [(ngModel)]="email" value={{userDetails.email}}
+                                 required="required"  readonly="true"/> 
+              </div>
+
+                <!-- Role -->
+                <div class="form-group">
+                  <label for="role" class="col-sm-6 control-label">Role: </label>
+                          <input type="text" class="col-sm-10 form-control" id="role" ngModel name="role" [(ngModel)]="role" value={{userDetails.role}}
+                               required="required"  readonly="true"/> 
+            </div>
+
+           </div>
+            
+           <div class="hwp">
+             <!-- Password -->
+             <div class="form-group">
+                  <label for="password" class="col-sm-6 control-label">Password: </label>
+                          <input type="text" class="col-sm-10 form-control"  id="password" ngModel name="password" [(ngModel)]="password" value={{userDetails.password}}
+                               required="required" readonly="true"/> 
+            </div>
+
+              <!-- Height -->
+              <div class="form-group">
+                    <label for="height" class="col-sm-6 control-label">Height: </label>
+                            <input type="text" class="col-sm-6 form-control" id="height" ngModel name="height" [(ngModel)]="height" value={{userDetails.height}}
+                                 required="required" /> cm
+              </div>
+
+              <!-- Weight -->
+              <div class="form-group">
+                    <label for="weight" class="col-sm-6 control-label">Weight: </label>
+                            <input type="text" class="col-sm-6 form-control" id="weight" ngModel name="weight" [(ngModel)]="weight" value={{userDetails.weight}}
+                                 required="required" /> kg
+              </div>
+
+        </div>
+
+
+
+              <!-- Photo -->
+              <div class="top-right">
+              <div class="form-group">
+
+                    <label for="imgurl" class="col-sm-6 control-label">Your Picture: </label>
+                    <input type="text" class="col-sm-6 form-control" id="url" 
+                ngModel name="imgurl" [(ngModel)]="imageUrl" value={{imageUrl}} readonly="true"/>         
+                    <input type="file" class="col-sm-10 form-control"  (change)="onChangeSelectFile($event)" 
+                    id="photo"  name="photo" required="required" /> 
+                <p class="help-block">Recent photo in JPG format</p>
+              </div>
+            </div>
+
+              <!-- submit -->
+             
+                <div class="submitbtn">
+              <!-- <input type="submit" name="save" class="save" value="Save" /> -->
+                <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Update</button>
+
+                </div>
+        </form>
+
+        <div>
+                <!-- {{myForm.value | json }} -->
+        </div>
+        </div>
+
+        <div class="col-lg-3" *ngIf="showpic">
+        <img class="card-img-top" [src]="imageUrl" alt="Card image cap">
+        </div>

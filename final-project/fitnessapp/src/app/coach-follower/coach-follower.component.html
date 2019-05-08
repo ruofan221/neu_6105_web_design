@@ -1,0 +1,43 @@
+<app-coach-nav></app-coach-nav>
+
+
+
+<div class="workoutVideoMaxContainer">
+    <h1>Your followers:</h1>
+    </div>
+    <br/>
+
+    
+    <div class="container">
+
+          
+      <div class="row align-items-start" >
+    
+        <div class="col" *ngFor = "let follower of followers">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" [src]="follower.imgurl"  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="/coachFollower/:id" [routerLink]="['/coachFollower',follower._id]" >
+                  {{follower.fullName}}
+                  </a></h5>
+                </div>
+              
+                <div class="card-body">
+                        <p class="card-text">Height: {{follower.height}} cm</p>
+                        <p class="card-text">Weight: {{follower.weight}} kg</p>
+                        <p class="card-text">Age: {{follower.age}} </p>
+                        <p class="card-text">Gender: {{follower.gender}} </p>
+                </div>
+              </div>
+        </div>
+    
+      </div>
+    
+    
+      
+        </div>
+    
+     
+    
+
+

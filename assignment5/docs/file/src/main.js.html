@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/main.js | scss-webpack-template</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="SCSS Webpack template project"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="scss-webpack-template"><meta property="twitter:description" content="SCSS Webpack template project"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/amuthanarulraj/scss-webpack-template"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/main.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import &apos;./../scss/main.scss&apos;;
+// binary search
+{
+    function binarysearch(arr, target){
+        let hi = arr.length - 1;
+        let lo = 0;
+        let mid = 0;
+        while(lo &lt;= hi){
+            /**
+             * chop the arr, move the mid to middle of the arr. 
+             * using Math.floor to calculate the mid.
+             * reference&#xFF1A;https://www.w3schools.com/jsref/jsref_floor.asp
+             */
+            mid = Math.floor((hi + lo) / 2);
+            // if arr[mid] &gt; target, move the hi to mid down one
+            if(arr[mid] &gt; target) hi = mid - 1;
+            // if arr[mid] &lt; target, move the lo to mid up one
+            else if(arr[mid] &lt; target) lo = mid + 1;
+            // the last condition is arr[mid] equals to target, return mid;
+            else return mid;
+        };
+        // if target were not in the arr, return -1
+        return -1;
+    };
+    
+    // binarysearch test
+    console.log(&quot;-------Binarysearch test--------&quot;);
+    let sortedArray = [0, 1, 2, 13, 54, 78, 89, 90, 100, 105, 204, 304, 1000];
+    console.log(&quot;the array is: &quot; + sortedArray);
+    let targetnum = 90;
+    console.log(&quot;the target number is: &quot; + targetnum);
+    let isFounded = binarysearch(sortedArray, targetnum);
+    if(isFounded === -1) console.log(&quot;target number is not in the array &quot; );
+    else console.log(&quot;the index of the target number is: &quot; + isFounded );
+    }
+    
+    // Bubble sort
+    /**
+     * repeatedly swapping the adjacent elements if they are in wrong order.
+     * so the largest number will sink to the bottom of array
+     */
+    {
+    function bubblesort(arr){
+        let N = arr.length - 1;
+        for(let i = 0; i &lt;= N; i++){
+            for(let j = 0; j &lt;= N - i; j++){
+                if(arr[j] &gt; arr[j + 1]) {
+                    let temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                };
+            };
+        };
+        return arr;
+    }
+    // bubble sort test
+    /**
+     * create a random integer array containing 15 integers.(between 0-100)
+     * reference https://blog.csdn.net/qq_39634880/article/details/80357513
+     */
+        let array = [];
+        for(let i = 0; i &lt; 15; i++){
+            let num = parseInt(Math.random()*100)+1;
+            array.push(num);
+        }
+        console.log();
+        console.log(&quot;-------Bubblesort test--------&quot;);
+        console.log(&quot;the random array is: &quot; + array);
+        let sortedArray = bubblesort(array);
+        console.log();
+        console.log(&quot;after sorted: &quot; + sortedArray);
+    }
+    
+    // Palindrome
+    {
+        function isPalindrome(str){
+            /**
+             * get the string to charArray
+             * reference: https://stackoverflow.com/questions/8761627/string-tochararray-equivalent-on-javascript?lq=1
+            */ 
+            let charArray = [...str];
+            let i = 0;
+            let j = charArray.length - 1;
+            var isPalindrom = true;
+            while(i &lt;= j){
+                if(charArray[i] != charArray[j]) isPalindrom = false;
+                i++;
+                j--;
+            }
+            return isPalindrom;
+        };
+    
+        /**
+         * palindrom test
+         */
+        console.log();
+        let string1 = &quot;helloworld&quot;;
+        let string2 = &quot;abcdedcba&quot;;
+        let test1 = isPalindrome(string1);
+        let test2 = isPalindrome(string2);
+        console.log(&quot;-------Palindrome--------&quot;);
+        // test string &quot;helloworld&quot;
+        if(test1)
+        console.log(`&quot;`+ string1 + `&quot;` + &quot;is palindrome&quot;);
+        else console.log(`&quot;`+ string1 + `&quot;` + &quot;is not palindrome&quot;);
+    
+        console.log();
+        // test string &quot;abcdedcba&quot;
+        if(test2)
+        console.log(`&quot;`+ string2 + `&quot;` + &quot;is palindrome&quot;);
+        else console.log(`&quot;`+ string2 + `&quot;` + &quot;is not palindrome&quot;);
+    }</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+<app-user-nav></app-user-nav>
+<section id="profile" name="profile">
+     
+    <div class="container desc">
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>Profile</h5>
+        </div>
+        <hr>
+        <!-- FullName -->
+        <div class="col-lg-6">
+          <p>
+           <label> FullName:</label> {{userDetails.fullName}}
+          </p>
+        </div>
+        <!-- image -->
+
+        <label class="photo">  Photo:  </label> 
+        <div class="col-lg-3" *ngIf="userDetails.imgurl!==undefine">
+          <p>
+              
+              <img class="card-img-top" [src]="userDetails.imgurl" alt="Card image cap">
+          </p>
+        </div>
+
+
+      <!-- Email -->
+        <div class="col-lg-6 col-lg-offset-3">
+          <p>
+            <label>  Email:  </label>   {{userDetails.email}} 
+          </p>
+        </div>
+          <!-- Role -->
+          <div class="col-lg-6 col-lg-offset-3">
+            <p>
+                    <label> Role: </label>    {{userDetails.role}} 
+            </p>
+          </div>
+
+           <!-- Weight -->
+           <div class="col-lg-6 col-lg-offset-3">
+              <p>
+                      <label> Weight: </label>    {{userDetails.weight}} 
+              </p>
+            </div>
+
+             <!-- height -->
+           <div class="col-lg-6 col-lg-offset-3">
+              <p>
+                      <label> Height: </label>    {{userDetails.height}} 
+              </p>
+            </div>
+
+          <button type="submit" class="btn" (click)="edit()"><i class="fa fa-user-edit"></i> Edit Profile</button>
+      <hr>
+    </div>
+    <!--/.container -->
+  </section>
+
+        <!-- <div class="form-group col-md-6">
+    <div class = "picturecontainer">
+      <h4>Member Profile Image</h4>
+      <input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
+      <button (click)="fileInput.click()">Select File</button>
+      <div class = "pictureborder"><img id="profileImg" src = {{url}} ></div>
+    </div>
+   </div> -->
+
+  
+
+ 
+
+
+
+
+

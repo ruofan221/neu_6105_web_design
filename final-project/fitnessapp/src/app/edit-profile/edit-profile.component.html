@@ -1,0 +1,116 @@
+<app-coach-nav></app-coach-nav>
+<!-- the whole form -->
+<div  id="container2">
+    <!-- title -->
+    <div class="page-header">
+            <h3 class="text-center">
+                    Profile Form
+                </h3>
+    </div>
+
+
+    <!-- row -->
+
+        <form #myForm="ngForm" ngForm enctype="multipart/form-data" class="form-horizontal" role="form" (ngSubmit)="update(myForm.value)">
+
+            <div class="form-row">
+            <!-- full name  -->
+              <div class="form-group">
+                    <label for="fullName" class="col-sm-6 control-label">Full Name: </label>
+                            <input  type="text" class="col-sm-10 form-control" [(ngModel)]="fullName" ngModel name="fullName" id="fullName" value={{coachDetails.fullName}}
+                                 required="required" /> 
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                    <label for="email" class="col-sm-6 control-label">Email: </label>
+                            <input type="text" class="col-sm-10 form-control" [pattern]="emailRegex" id="email" ngModel name="email" [(ngModel)]="email" value={{coachDetails.email}}
+                                 required="required"  readonly="true"/> 
+              </div>
+
+                <!-- Role -->
+                <div class="form-group">
+                  <label for="role" class="col-sm-6 control-label">Role: </label>
+                          <input type="text" class="col-sm-10 form-control" id="role" ngModel name="role" [(ngModel)]="role" value={{coachDetails.role}}
+                               required="required"  readonly="true"/> 
+            </div>
+
+           </div>
+            
+             <!-- Password -->
+             <div class="form-group">
+                  <label for="password" class="col-sm-6 control-label">Password: </label>
+                          <input type="text" class="col-sm-6 form-control"  id="password" ngModel name="password" [(ngModel)]="password" value={{coachDetails.password}}
+                               required="required" readonly="true"/> 
+            </div>
+
+              <!-- Height -->
+              <div class="form-group">
+              
+             <div class="input-group mb-3">
+                 <div class="input-group-prepend">
+                           <span class="input-group-text" id="inputGroup-sizing-default" >Your height(cm)</span>
+                   </div>
+                        <input type="text" class="form-control col-sm-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" 
+                        [pattern]="heightPattern" [(ngModel)]="height" name="height" ngModel value={{coachDetails.height}} >
+              </div>
+              </div>
+
+
+              <!-- Weight -->
+              <div class="form-group">
+                <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Your weight(kg)</span>
+                        </div>
+                        <input type="text" class="form-control col-sm-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" 
+                        [pattern]="weightPattern" [(ngModel)]="weight" name="weight" ngModel  value={{coachDetails.weight}} >
+                      </div>
+              </div>
+
+              <div *ngIf="isCorrect" class="alert alert-danger col-sm-6" role="alert">
+                Please enter height & weight in the correct format!!!
+              </div>
+
+              <!-- Photo -->
+              <!-- <div class="top-right">
+              <div class="form-group">
+                    <label for="photo" class="col-sm-6 control-label">Your Picture: </label>
+                            <input type="file" class="col-sm-10 form-control" id="photo" ngModel name="photo" [(ngModel)]="photo"
+                                 ng-change="onFileSelected($event)" /> 
+                                 <p class="help-block">Recent photo in JPG format</p>
+              </div>
+            </div> -->
+            <!-- photo -->
+            <div class="top-right">
+              <div class="form-group">
+                <label for="imgurl" class="col-sm-6 control-label">Your Picture: </label>
+                <input type="text" class="col-sm-6 form-control" id="url" 
+            ngModel name="imgurl" [(ngModel)]="imageUrl" value={{imageUrl}} readonly="true"/>         
+                <input type="file" class="col-sm-10 form-control"  (change)="onChangeSelectFile($event)" 
+                id="photo"  name="photo" required="required" /> 
+            <p class="help-block">Recent photo in JPG format</p>
+          </div>
+        </div>
+
+              <!-- submit -->
+             
+                    <!-- <input type="submit" name="save" class="save" value="Save" /> -->
+      <button type="submit" class="btn btn-primary" ><i class="fa fa-paper-plane"></i> Update</button>
+        </form>
+
+        <!-- <div>
+                {{height}}
+        </div> -->
+
+</div>
+
+
+
+
+
+
+
+
+
+

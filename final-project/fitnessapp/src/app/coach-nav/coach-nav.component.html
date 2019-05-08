@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Casual Fitness</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <!-- current page:coach's main page -->
+      <li class="nav-item active">
+        <a class="nav-link" href="/coachHome" ><i class="fas fa-home"></i> Home<span class="sr-only">(current)</span></a>
+      </li>
+
+      <!-- profile page -->
+      <li class="nav-item">
+        <a class="nav-link" href="/coachProfile"><i class="far fa-id-card"></i> Profile</a>
+      </li>
+
+      <!-- follower -->
+      <li class="nav-item">
+          <a class="nav-link" href="/coachFollower" ><i class="fas fa-heart"></i> Follower</a>
+        </li>
+
+     <!-- update my new video -->
+    <li class="nav-item">
+  <a class="nav-link" href="/coachVideo" > <i class="fab fa-discourse"></i> My courses</a>
+     </li>
+
+        <!-- update my new video -->
+        <li class="nav-item">
+            <a class="nav-link" href="/coachUpload" > <i class="fas fa-cloud-upload-alt"></i> Upload course video</a>
+          </li>
+
+           <!-- view all videos -->
+        <li class="nav-item">
+            <a class="nav-link" href="/allVideos" > <i class="fab fa-youtube"></i> More videos</a>
+          </li>
+     
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search Videos" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+
+    <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0" (click)="onLogout()"><i class="fas fa-sign-out-alt" ></i>Logout</button>
+       
+    </form>
+
+  </div>
+</nav>

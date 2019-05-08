@@ -1,0 +1,47 @@
+{
+  "name": "scss-webpack-template",
+  "version": "1.0.0",
+  "description": "SCSS Webpack template project",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amuthanarulraj/scss-webpack-template.git"
+  },
+  "keywords": [
+    "SCSS",
+    "Webpack",
+    "Template"
+  ],
+  "author": "Amuthan Arulraj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amuthanarulraj/scss-webpack-template/issues"
+  },
+  "homepage": "https://github.com/amuthanarulraj/scss-webpack-template#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "1.0.1",
+    "css-loader": "2.1.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.5.0",
+    "node-sass": "4.11.0",
+    "nodemon": "^1.18.10",
+    "sass-loader": "7.1.0",
+    "webpack": "4.29.0",
+    "webpack-cli": "3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.4.19",
+    "morgan": "^1.9.1"
+  }
+}

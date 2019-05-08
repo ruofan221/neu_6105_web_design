@@ -1,0 +1,24 @@
+
+<app-coach-nav></app-coach-nav>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let data of slides">
+            <div class="joinus" >Find Your Fitness.<br/>
+                    Something for Everyone.
+                <br/>
+                <a href="/allVideos">
+                    <span class="menu-icon"><i class="icon -fitness" aria-hidden="true"></i></span>
+                    <span class="menu-label">  <i class="fab fa-youtube"></i> More Videos</span></a></div>
+        <img [src]="data" alt="" >
+      </div>
+     
+    </div>
+
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+   
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>

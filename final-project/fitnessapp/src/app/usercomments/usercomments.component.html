@@ -1,0 +1,31 @@
+<app-user-nav></app-user-nav>
+
+
+<div class ="commenttable" >
+   
+   
+
+    <table class ="video" > 
+        <tr>
+            <th>Video Name</th>
+            
+          </tr>
+        <tr  *ngFor="let name of videoname">
+            
+          <td><a href="/uservideodetails" [routerLink]="['/uservideodetails',name._id]" 
+            class="card-link">{{name.Name}}</a></td>
+          
+        </tr>
+    </table>
+
+      <table class ="comments" > 
+          <tr>
+              <th>Comment</th>
+              <th>Reply</th>
+            </tr>
+          <tr  *ngFor="let comment of mycomments">
+            <td>{{ comment.comment }}</td>
+            <td>{{ comment.reply }}</td>
+          </tr>
+      </table>
+</div>

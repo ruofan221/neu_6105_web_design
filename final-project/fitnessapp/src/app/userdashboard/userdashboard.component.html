@@ -1,0 +1,172 @@
+<app-user-nav></app-user-nav>
+
+<div class="container">
+
+  <div class="headofpage">
+    <h1>Welcome! {{userDetails.fullName}}</h1>
+  </div>
+
+    <div class="row">
+        <form #myForm="ngForm" ngForm enctype="multipart/form-data" role="form" (ngSubmit)="checkpattern()">
+      <div class="col">
+          <div class="shadow-sm p-3 mb-5 bg-white rounded">
+              <div class = "col2btn"> <a href="/useredit"><button  type="button" class="btn btn-outline-primary">Update your height and weight</button></a></div>
+              <!-- height -->
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default" >Your height(cm)</span>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" 
+                  [pattern]="heigthPattern" [(ngModel)]="heigth" name="heigth" ngModel value={{userDetails.height}} readonly="true">
+                </div>     
+              <!-- weight -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Your weight(kg)</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" 
+                    [pattern]="weigthPattern" [(ngModel)]="weigth" name="weigth" ngModel value={{userDetails.weight}} readonly="true">
+                  </div>
+                  <!-- age -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Your age</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" 
+                    [pattern]="agePattern" [(ngModel)]="age"  name="age">
+                  </div>
+              <!-- gender -->
+              <div class="genderradio">
+              <label for="gender" >Gender: </label>
+               Male &nbsp;<input type="radio"  id="gender"  name="gender" [(ngModel)]="gender"
+                required="required" value="male"/>     
+             Female &nbsp;<input type="radio"  id="gender" name="gender" [(ngModel)]="gender"
+              required="required" value="female"/> 
+             </div>
+             <div *ngIf="isCorrect" class="alert alert-danger" role="alert">
+                Please enter all fileds and the correct format!!!
+              </div>
+              <!--submit -->
+              <button type="submit" class="btn btn-primary" ><i class="fa fa-paper-plane"></i> Calculate</button>
+           
+              <!-- BMR -->
+              <div class = "BMRcal">
+                  <label for="BMR" >Your BMR is: </label>
+               <span class="bmr"> {{BMR}} </span>
+              </div>
+
+              <!-- what is BMR -->
+
+              <!-- Button trigger modal -->
+
+              <button type="button" id="whatisbmrbutton" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                  What is BMR
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">What is BMR?</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        The basal metabolic rate (BMR) refers to the energy metabolism rate of the human body 
+                        when it is awake and extremely quiet, and is not affected by muscle activity, 
+                        environmental temperature, food and mental stress.<br>
+                        The basal metabolic rate has a very large effect on weight loss. 
+                        The right amount of exercise per day helps to increase the body's basal metabolic rate, 
+                        while dieting (extremely hunger strike) reduces the basal metabolic rate. 
+                        The basal metabolic rate can be roughly calculated by sex, age, height and weight.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+          </div>
+      </div>
+      
+    </form>
+
+    
+
+
+      <div class="col">
+        <!-- swiper img -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" *ngFor="let data of slides">
+                <img [src]="data" alt="" >
+              </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+           
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class = "col3btn"> <a href="https://www.google.com/maps"><button  type="button" class="btn btn-outline-primary"><i class="fas fa-map-marked-alt"></i>  Find A Gym</button></a></div>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="col">
+
+        <!-- Following -->
+          <div class="shadow-sm p-3 mb-5 bg-white rounded">
+            <h3>The coach you follow</h3>
+            <div class="list-group" *ngFor="let coach of coachname">
+                <a href="/userfollowing" [routerLink]="['/userfollowing',coach._id]"  class="list-group-item list-group-item-action" >
+                  Name: {{coach.fullName}}
+                </a>
+              </div>
+
+
+
+
+
+
+
+           <div class = "col2btn"> <a href="/uservideo"><button  type="button" class="btn btn-outline-primary">Start exercising now</button></a></div>
+           <div class = "col2btn"> <a href="/workoutvideos"><button  type="button" class="btn btn-outline-primary">Need new videos?</button></a></div>
+
+
+
+
+          </div>
+      </div>
+
+
+      <!-- <div class="col">
+        2 of 3
+      </div> -->
+     
+<!-- 
+      <div class="col">
+          <div class = "col2btn"> <a href="/uservideo"><button  type="button" class="btn btn-outline-primary"><i class="fas fa-map-marked-alt"></i>  Find A Gym</button></a></div>
+      </div> -->
+     
+
+    </div>
+
+
+  </div>
+   
+
+
+
+
+
+ 

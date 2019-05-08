@@ -1,0 +1,66 @@
+<!-- quick add button -->
+<div class="quickadd">
+  <button id="QuickAdd" (click)="displayForm()">+ Add</button>
+</div>
+<!-- view button -->
+<div class="quickadd">
+  <button id="View" (click) = 'viewContact()'> View </button>
+</div>
+<!-- add contact -->
+<form (submit)='addContact()'   >
+  <div class="quickaddForm" *ngIf='formshow'>
+      <label for="fullname">Name</label>
+      <input required type="text"  id="fullname" name="name" class="formFields"   [(ngModel)]= "name" >
+
+      <label for="phone">Phone</label>
+      <input type="text" required id="phone" [(ngModel)]='phone' class="formFields" name="phone">
+
+      <label for="address">Address</label>
+      <input required name="address" id="address" cols="30" rows="10" class="formFields"
+      [(ngModel)]='address' name="address">
+
+      <label for="city">City</label>
+      <input type="text" required id="city" [(ngModel)]='city' class="formFields" name="city">
+
+      <label for="email">E-Mail</label>
+      <input required type="text" id="email" class="formFields" [(ngModel)]='email' name="email">
+
+      <br><br>
+      <input id="Add" type='submit' value='Add Now'>
+      <button id="Cancel" (click)='cancelForm()'>Cancel</button>
+
+  </div>
+</form>
+
+<!-- show list -->
+<div class="addbook"  *ngIf = "showList"> 
+  <div class="entry" *ngFor="let contact of contacts">
+      <div class="name">
+          <p>{{ contact.name }}</p>
+      </div>
+      <div class="email">
+          <p></p>
+      </div>
+      <div class="phone">
+          <p></p>
+      </div>
+      <div class="address">
+          <p></p>
+      </div>
+      <div class="city">
+          <p></p>
+      </div>
+      <input type="button" id="detail" value='Detail' (click) = 'showDetail(contact._id)'>
+  </div>
+</div>
+<!-- show detail -->
+<div id="viewdetail" *ngIf = 'showDetails'>
+  <ul>
+      <li> {{ name }}</li>
+      <li>{{ email }} </li>
+      <li>{{ phone }} </li>
+      <li>{{ address }} </li>
+      <li>{{ city }} </li>
+  </ul>
+</div>
+

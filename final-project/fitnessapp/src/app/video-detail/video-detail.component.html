@@ -1,0 +1,126 @@
+<app-coach-nav></app-coach-nav>
+<div class ="container">
+<div class="show-header">
+    <div class="container -flush">
+      <div class="media">
+        <div class="responsive-video">
+          <iframe width="700" height="394" [src]="sanitizer.bypassSecurityTrustResourceUrl(video.video.url)" frameborder="0" allowfullscreen="1"></iframe>
+        </div>
+      </div>
+     
+
+      <div class="info has-actions">
+        <div class="video-details-wrapper video-detail-wrapper">
+          <div class="video-details">
+            <h2 class="heading -x-small caps-half demi details">Workout Details</h2>
+            <div class="stats">
+              <ul class="details-list">
+                  
+                <li>
+                  <span class="detail-header">Name:</span>
+                  <span class="detail-value demi">{{video.video.Name}} </span>
+                </li>
+                <li>
+                  <span class="detail-header">Description:</span>
+                  <span class="detail-value demi">{{video.video.Description}} </span>
+                </li>
+                <li>
+                  <span class="detail-header"><i class="fas fa-thumbs-up"></i> Upvote Count:  </span>
+                  <span class="detail-value demi">{{video.video.like}} </span>
+                </li>
+              
+                
+              </ul>
+              <div class="core-focus">
+                <i class="icon -focus-upper_body" aria-hidden="true"></i>
+                <div class="heading">
+                  <span class="focus-label" id="datecreated">Created date: </span>
+                  <span class="focus demi" id="date2created">{{video.video.creatdate}}</span>
+                </div>
+              </div>
+              </div></div></div></div></div></div>
+
+
+
+<!-- Reply area -->
+    <div class="feed">
+      <h2 class="heading -x-small caps-half demi details">Video Feed</h2>
+    </div>
+
+<!-- Post Reply Box: Start -->
+<ul class="list-group">
+  <li class="list-group-item">
+
+      <div *ngIf="newReply.indexOf(commentid) > -1">
+
+          <!-- Form: Reply Form Start -->
+      <form [formGroup]="replyForm">
+          <textarea name="reply" rows="10" cols="30" class="form-control" formControlName="reply"></textarea>
+          <!-- Validation -->
+          <div [ngClass]="{'has-success': !replyForm.controls.reply.errors && replytForm.controls.reply.dirty, 'has-error': replyForm.controls.reply.dirty && replyForm.controls.reply.errors}">
+            <ul class="help-block">
+              <li *ngIf="replyForm.controls.reply.errors?.required && replyForm.controls.reply.dirty">This field is required.</li>
+              <li *ngIf="(replyForm.controls.reply.errors?.maxlength && replyForm.controls.reply.dirty) ||(replyForm.controls.reply.errors?.minlength && replyForm.controls.reply.dirty)">Reply must be at least 1 character but no more than 50.</li>
+            </ul>
+          </div>
+          <!-- Post Button -->
+          <button id="postbtn"  type="submit" name="button" class="btn btn-sm btn-info" (click)="postReply(videoid)">Post</button>
+          <!-- Cancel Button -->
+          <button id="cancelbtn" type="button" name="button" class="btn btn-sm btn-danger" (click)="cancelSubmission(videoid)">Cancel</button>
+        </form>
+        <!-- Form: Reply Form End -->
+    
+      </div>
+    
+    <!-- <div class ="commenttable" >
+
+        <table class ="username" > 
+            <tr>
+                <th>User</th>
+                <th>Comment</th>
+                <th>Reply</th>
+              </tr>
+            <tr  *ngFor="let comment of commentsarray">
+              <td>{{ comment.commentor }}</td>
+              <td>{{ comment.comment }} </td>
+              <td>{{ comment.reply }}</td>
+              <button type="button" name="button" class="btn btn-sm btn-danger" (click)="draftReply(comment._id)" [disabled]="newReply.indexOf(videoid) > -1">Post Reply</button>
+            </tr>
+        </table>
+  </div> -->
+
+
+  <div class ="commenttable" >
+      <table class ="comments" >
+          <tr>
+              <th>User</th>
+              
+            </tr>
+          <tr *ngFor="let user of comments">
+       <td>{{user.fullName}} :</td>  
+          </tr>
+        </table>
+        <table class ="username" > 
+            <tr>
+                <!-- <th>User</th> -->
+                <th>Comment</th>
+                <th>Reply</th>
+              </tr>
+            <tr  *ngFor="let comment of finalComments">
+              <!-- <td>{{comment.commentor}}</td> -->
+              <td>{{ comment.comment }} </td>
+              <td>{{ comment.reply }}</td>
+              <button type="button" name="button" class="btn btn-sm btn-danger" (click)="draftReply(comment._id)" [disabled]="newReply.indexOf(videoid) > -1">Post Reply</button>
+            </tr>
+        </table>
+      </div>
+</li>
+
+   
+
+</ul>
+
+<!-- end of container -->
+            </div>         
+
+

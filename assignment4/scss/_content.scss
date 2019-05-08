@@ -1,0 +1,442 @@
+$content_bkcolor: white;
+$border-color: rgb(228, 227, 227);
+$text_align_right: right;
+$text_align_left: left;
+/*
+this is for content css, using grid;
+*/
+
+@mixin display_img($background-image){
+        background-image: $background-image;
+        background-size: cover;
+        height: 16px;
+        width: 23px;
+        background-repeat: no-repeat;
+        display: inline-block;
+}
+.content {
+    grid-row: 2/3;
+}
+
+.content_wrapper {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+// this line to help with auto-created rows.
+    grid-auto-rows: minmax(100px,auto);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+// big news
+.bignews {
+    grid-column: span 6;
+    grid-row: span 4;
+    background: $content_bkcolor;
+    
+} 
+.bognews_img{
+    background-image: url(./Images/bignews.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    .p1 {
+        position: absolute;
+        top: 450px;
+        left: 650px;
+        background:white;
+        font-size: 150%;
+        color: black;
+        width: 10%;
+        padding: 10px;
+        
+        text-align: center;
+    }
+    .p2 {
+        background: rgb(48, 58, 48);
+        color: rgb(241, 236, 236);
+        padding: 10px 20px 10px 20px;
+        margin: 372px 0 0 0;
+    }
+    .bignewsheader {
+        font-size: 130%;
+    }
+   }
+
+/* country feild, using grid
+*/
+.country {
+    border: $border-color 1px solid;
+    grid-column: span 3;
+    grid-row: span 2;
+    .country_wrapper {
+        background: white;
+        display: grid;
+       
+        grid-template: 7 / 3;
+        grid-template-areas: "D D F" "D D F" "S S_1 S_2"
+        "M M_1 M_2" "i i_1 i_2" "y y_1 y_2" "e e_1 e_2"
+    }
+}
+.dollar{
+    border-bottom: $border-color 1px solid;
+    grid-area: D;
+    padding: 0 0 0 10px;
+    .dollar_img{
+        background-image: url(./Images/flag/usa.png);
+        background-size: cover;
+        height: 16px;
+        width: 23px;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+}
+
+.dollar_text{
+    text-align: left;
+    display: inline-block;
+    padding: 0 0 0 5px;
+}
+.feb {
+    grid-area: F;
+    text-align: right;
+    border-bottom: $border-color 1px solid;
+    padding: 0 10px 0 0;
+}
+// singapor
+.singapor {
+    grid-area: S;
+    text-align: left;
+    padding: 0 0 0 10px;
+    p{
+        padding:0;
+        margin:5px;
+    }
+}
+.singapor_img {
+    @include display_img(url(./Images/flag/singa.png))
+}
+.singapor_text{
+    @extend .dollar_text;
+}
+.singapor_money{
+    grid-area: S_1;
+    text-align: right;
+    p{
+        padding:0;
+        margin:5px;
+    }
+}
+.singapor_exchange{
+    grid-area:S_2;
+    text-align: right;
+    p{
+        padding:0;
+        margin:5px;
+    }
+    color: red;
+}
+@mixin country_money_exchange ($gridarea){
+    border-top: solid 1px $border-color;
+    grid-area: $gridarea;
+    text-align: right;
+    p{
+        padding:0;
+        margin:5px;
+    }
+}
+@mixin countryrow($cgridarea) {
+    border-top: solid 1px $border-color;
+    grid-area: $cgridarea;
+    text-align: left;
+    padding: 0 0 0 10px;
+    p{
+        padding:0;
+        margin:5px;
+    }
+}
+// mal
+.mal {
+    @include countryrow(M);
+}
+.mal_img {
+    @include display_img(url(./Images/flag/mala.png));
+}
+.mal_text{
+    @extend .dollar_text;
+}
+.mal_money{
+    @include country_money_exchange(M_1);
+}
+.mal_exchange{
+    @include country_money_exchange(M_2);
+    color: green;
+}
+
+// ind
+.ind {
+    @include countryrow(i);
+}
+.ind_img {
+    @include display_img(url(./Images/flag/indo.png));
+}
+.ind_text{
+    @extend .dollar_text;
+}
+.ind_money{
+    @include country_money_exchange(i_1);
+}
+.ind_exchange{
+    @include country_money_exchange(i_2);
+    color: red;
+}
+
+// cha
+.cha {
+    @include countryrow(y);
+}
+.cha_img {
+    @include display_img(url(./Images/flag/china.png));
+}
+.cha_text{
+    @extend .dollar_text;
+}
+.cha_money{
+    @include country_money_exchange(y_1);
+}
+.cha_exchange{
+    @include country_money_exchange(y_2);
+    color: green;
+}
+
+// eur
+.eur {
+    @include countryrow(e);
+}
+.eur_img {
+    @include display_img(url(./Images/flag/euro.png));
+}
+.eur_text{
+    @extend .dollar_text;
+}
+.eur_money{
+    @include country_money_exchange(e_1);
+}
+.eur_exchange{
+    @include country_money_exchange(e_2);
+    color: red;
+}
+
+
+// internationalnews field;
+.internationalnews {
+    grid-column: span 3;
+    grid-row: span 4;
+    padding: 10px;
+    border: 1px solid $border-color;
+}
+.internationalnew_content {
+    border-bottom: 1px solid $border_color;
+    border-top: 1px solid $border-color;
+    padding: 10px 0 10px 0;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns:40% 60%;
+    grid-auto-rows: 90px;
+     
+    p {
+        margin:0;
+        padding:0;
+    }
+}
+.internews_text {
+    padding-top: 3px;
+}
+.internewscontent{
+    text-emphasis: emphasis;
+}
+.schedule{
+    color:rgb(175, 175, 175);
+}
+.internews_header {
+    color: grey;
+}
+.internews_footer {
+    color: rgb(175, 175, 175);
+    text-align: center;
+    a {
+        color: rgb(175, 175, 175);
+        text-decoration: none;
+    }
+}
+
+.internews_img1{
+    @include display_img(url(./Images/internation/inter1.jpg));
+    width: 100%;
+    height: 100%;
+
+}
+
+.internews_img2{
+    @include display_img(url(./Images/internation/iner2.jpg));
+    width: 100%;
+    height: 100%;
+}
+
+.internews_img3{
+    @include display_img(url(./Images/internation/inter2.jpg));
+    width: 100%;
+    height: 100%;
+}
+
+// sport news
+.sportsnews_img1{
+    @include display_img(url(./Images/sports-2.jpg));
+    width: 100%;
+    height: 100%;
+}
+.sportsnews_img2{
+    @include display_img(url(./Images/sports-3.jpg));
+    width: 100%;
+    height: 100%;
+}
+
+.sportsnews_img3{
+    @include display_img(url(./Images/sports-1.jpg));
+    width: 100%;
+    height: 100%;
+}
+// generalnews
+// .generalnewsp{
+//     position: relative;
+//         top: 65%;
+//         left: 5%;
+//         background:white;
+//         color: black;
+//         width: 20%;
+//         padding: 10px;
+//         text-align: center;
+// }
+.generalnews {
+    grid-column: span 3;
+    grid-row: span 2;
+    background: $content_bkcolor;
+    @each $usr in generalnews1, generalnews2, generalnews3, generalnews4 {
+        .#{$usr} {
+            background-image: url(./Images/#{$usr}.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        display: inline-block;
+        p {
+        position: relative;
+        top: 65%;
+        left: 5%;
+        background:white;
+        color: black;
+        width: 20%;
+        padding: 10px;
+        text-align: center;
+        }
+        }
+    }
+}
+.generaknews_text {
+    grid-column: span 3;
+    grid-row: span 1;
+    background: $content_bkcolor;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+.sportnews {
+    @extend.internationalnews;
+}
+.cutoff {
+    border-top: 2px solid $border-color;
+    grid-column: span 9;
+    grid-row: span 1;
+    margin:50px 0 0 0;
+    
+}
+.categorynews {
+   @extend.generalnews;
+   
+}
+@mixin catnewsp($color) {
+    position: relative;
+        top: 65%;
+        left: 5%;
+        background:$color;
+        color:white;
+        width: 25%;
+        padding: 10px;
+        text-align: left;
+        font-size: 120%;
+} 
+
+.catnews_img {
+    @include display_img(url(./Images/generalnews5.jpg));
+    width: 100%;
+    height: 100%;
+    p {
+        @include catnewsp(rgb(14, 129, 145))
+        }  
+}
+.catnews_img1 {
+    @include display_img(url(./Images/generalnews6.jpg));
+    width: 100%;
+    height: 100%;
+    p {
+        @include catnewsp(pink);
+        }       
+}
+.catnews_img2 {
+    @include display_img(url(./Images/travel-think.jpg));
+    width: 100%;
+    height: 100%;
+    p {
+        @include catnewsp(rgb(235, 235, 110));
+    }  
+}
+.categorynew_text {
+    @extend.generaknews_text; 
+    padding-bottom: 30px;
+    ul { 
+        list-style: none;
+        margin: 0px;
+        padding-left: 20px;
+        li:before {
+            content: "–"; /* en dash */
+            position: absolute;
+            margin-left: -1.1em; 
+            
+        }
+    }
+}
+.ad {
+    grid-column: span 9;
+    grid-row: span 1;
+    background: $content_bkcolor;
+    padding: 0 0 10px 0;
+   .ad1{
+       position: relative;
+        @include display_img(url(./Images/ad/ad3.jpg));
+        width: 300px;
+        height: 100px;
+        display: inline-block;
+        left: 322px;
+   }
+   .ad2{
+        @include display_img(url(./Images/ad/ad4.png));
+        width: 500px;
+        height: 100px;
+        float: left;
+       
+   }
+}

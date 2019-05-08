@@ -1,0 +1,41 @@
+<app-user-nav></app-user-nav>
+<!-- 
+<div>
+<video width="320" height="240" controls>
+    <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+  </video>
+</div> -->
+
+<div class="workoutVideoMaxContainer">
+    <h1>Your Favorite Videos</h1>
+</div>
+
+<div class="container" >
+    <div class="row align-items-start" >
+      <div class="col" *ngFor = "let video of favoriteVideo">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" [src]="video.coverurl" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{video.Name}}</h5>
+                <p class="card-text">{{video.Description}}</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    
+                      <a href="/uservideodetails" [routerLink]="['/uservideodetails',video._id]" class="card-link">Watch Video</a>
+                      <!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div> -->
+                     
+      
+                      <!-- cancle favorite -->
+                    <!-- <button  class="btn btn-sm btn-warning" (click)= "canclefavoriteVideo(video._id)"><i class="fas fa-heart-broken"></i></button> -->
+                     
+                  
+                  </li>
+               
+              </ul>
+             
+            </div>
+      </div>
+    </div>
+      </div>
+     
